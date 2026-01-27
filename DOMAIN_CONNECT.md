@@ -1,52 +1,40 @@
-# Domain connection (Namecheap → Vercel)
+# Domain connection (Namecheap → Vercel) — turningtideproject.com
 
-Target domain:
+You have added both domains in Vercel:
 - `turningtideproject.com` (apex/root)
 - `www.turningtideproject.com` (www)
 
-> You told me `www.turningtideproject.com`. Best practice is to connect **both** apex + `www` and then set one as the canonical redirect.
+Vercel is currently showing **Invalid configuration** because the DNS at Namecheap hasn’t been updated to match.
 
-## 1) Add domains in Vercel
+## Use the DNS records Vercel shows in your Project → Settings → Domains
 
-1. Deploy the project to Vercel.
-2. In Vercel → Project → **Settings** → **Domains**, add:
-   - `turningtideproject.com`
-   - `www.turningtideproject.com`
-3. Pick which is canonical (recommended: **apex** `turningtideproject.com`) and enable redirect:
-   - `www.turningtideproject.com` → `turningtideproject.com`
+Vercel may show **project-specific** DNS targets (they can differ from older “standard” values like `76.76.21.21` / `cname.vercel-dns.com`).
 
-## 2) Set DNS in Namecheap
+Based on your screenshot, Vercel wants:
 
-In Namecheap, go to:
-- **Domain List** → **Manage** (for `turningtideproject.com`) → **Advanced DNS**
+### `turningtideproject.com` (apex/root)
+- Type: `A`
+- Host/Name: `@`
+- Value: `216.150.1.1`
+- TTL: `Automatic`
 
-Then add/update these records (remove conflicting ones for `@` and `www`):
+### `www.turningtideproject.com` (www)
+- Type: `CNAME`
+- Host/Name: `www`
+- Value: `9ddc00051cbf2ba2.vercel-dns-016.com.`
+- TTL: `Automatic`
 
-### Required DNS records (Vercel)
+> If Vercel’s UI ever shows different values, **use Vercel’s latest values**.
 
-- **A record (apex/root)**
-  - Type: `A`
-  - Host: `@`
-  - Value: `76.76.21.21`
-  - TTL: `Automatic`
+## Where to set this in Namecheap
 
-- **CNAME record (www)**
-  - Type: `CNAME`
-  - Host: `www`
-  - Value: `cname.vercel-dns.com.`
-  - TTL: `Automatic`
+Namecheap → **Domain List** → **Manage** → **Advanced DNS**
 
-## 3) Wait for verification + HTTPS
+- Remove/replace any existing conflicting records for `@` and `www` (including “Parking” / “URL Redirect Record”).
+- Add the `A` record for `@` and the `CNAME` for `www` exactly as above.
 
+## Verify
+
+- Back in Vercel → Project → Settings → Domains, click **Refresh**.
 - DNS propagation is often a few minutes, sometimes up to 24 hours.
-- Once Vercel sees the records, it will auto-issue **HTTPS/SSL**.
-
-## 4) Quick troubleshooting
-
-- If Namecheap has an existing `CNAME` or `A` record for `www` or `@`, remove/replace it.
-- If you’re using Namecheap “Parking” or “URL Redirect Record”, disable those for this domain.
-- If verification is stuck, confirm:
-  - `@` is exactly `76.76.21.21`
-  - `www` CNAME points to exactly `cname.vercel-dns.com.`
-
-Reference: Vercel domain setup docs.
+- Once verified, Vercel will automatically provision **HTTPS/SSL**.
