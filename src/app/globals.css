@@ -26,6 +26,7 @@
   /* Layout */
   --container: 1100px;
   --radius: 16px;
+  --radius-button: 10px;
   --shadow: 0 10px 30px color-mix(in oklab, var(--fg) 12%, var(--bg) 88%);
 }
 
@@ -168,11 +169,11 @@ html[data-scrolled="true"] .siteHeader {
   align-items: center;
   justify-content: center;
   padding: 0.55rem 0.9rem;
-  border-radius: 999px;
+  border-radius: var(--radius-button);
   background: var(--olive);
   color: var(--white);
   font-weight: 700;
-  border: 1px solid color-mix(in oklab, var(--olive) 80%, black 20%);
+  border: none;
   transition: filter 160ms ease, background-color 160ms ease,
     border-color 160ms ease;
 }
@@ -181,7 +182,6 @@ html[data-scrolled="true"] .siteHeader {
   text-decoration: none;
   filter: brightness(1.02);
   background: color-mix(in oklab, var(--olive) 88%, black 12%);
-  border-color: color-mix(in oklab, var(--olive) 70%, black 30%);
 }
 
 .navLink:focus-visible {
@@ -358,8 +358,8 @@ html[data-scrolled="true"] .siteHeader {
   align-items: center;
   justify-content: center;
   padding: 0.75rem 1rem;
-  border-radius: 999px;
-  border: 1px solid var(--border);
+  border-radius: var(--radius-button);
+  border: none;
   background: var(--accent);
   color: var(--white);
   font-weight: 600;
@@ -373,7 +373,6 @@ html[data-scrolled="true"] .siteHeader {
 .button.secondary {
   background: transparent;
   color: var(--accent);
-  border-color: color-mix(in oklab, var(--accent) 38%, var(--surface) 62%);
 }
 
 .grid {

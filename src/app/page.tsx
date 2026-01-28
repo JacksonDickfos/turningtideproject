@@ -94,7 +94,7 @@ export default function Home() {
 
           <div className="floatingCardFooter">
             <Link className="button" href="/free-resources">
-              Free Download
+              Free PDF Download
             </Link>
             <p className="muted floatingCardNote" style={{ margin: 0 }}>
               Takes 5 minutes
