@@ -1,7 +1,11 @@
 export const site = {
   name: "Turning Tide Project",
   domain: "turningtideproject.com",
-  tagline: "Digital books, courses, and tools to help you ________.",
+  tagline: {
+    prefix: "Digital books, courses, and tools to help ",
+    emphasis: "Carers",
+    suffix: ".",
+  },
   description:
     "A storefront for digital products (books today; courses and modules coming soon).",
   social: {
