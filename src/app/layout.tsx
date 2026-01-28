@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   title: site.name,
   description: site.description,
   icons: {
-    icon: [{ url: "/images/primarylogocopy.png", type: "image/png" }],
+    icon: [{ url: "/images/favicon.png", type: "image/png" }],
   },
 };
 
