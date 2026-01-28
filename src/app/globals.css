@@ -218,6 +218,11 @@ html[data-scrolled="true"] .siteHeader {
   line-height: 1.05;
 }
 
+.heroTagline {
+  font-size: clamp(1.05rem, 0.95rem + 0.6vw, 1.35rem);
+  line-height: 1.35;
+}
+
 .heroTitleBlock {
   display: grid;
   gap: 0.5rem;

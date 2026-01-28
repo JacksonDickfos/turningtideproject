@@ -59,10 +59,12 @@ export default function Home() {
                   {site.heroSubheading}
                 </p>
               </div>
-              <p className="muted" style={{ margin: 0 }}>
-                {site.tagline.prefix}
-                <span className="sheenWord">{site.tagline.emphasis}</span>
-                {site.tagline.suffix}
+              <p className="muted heroTagline" style={{ margin: 0 }}>
+                <span className="sheenWord">
+                  {site.tagline.prefix}
+                  {site.tagline.emphasis}
+                  {site.tagline.suffix}
+                </span>
               </p>
             </div>
           </div>
