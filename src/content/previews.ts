@@ -3,6 +3,7 @@ export type PreviewItem = {
   title: string;
   subtitle?: string;
   description: string;
+  longDescription?: string;
   imageSrc?: string;
   imageAlt?: string;
 };
@@ -68,12 +69,23 @@ export const freeResourcesPreview: PreviewItem[] = [
   },
   {
     id: "fr-2",
-    title: "Free Resource 2",
-    description: "Visual + copy coming soon.",
+    title: "Aged Care Facility Checklist",
+    subtitle:
+      "What to look for – and what to ask – when choosing care for someone you love",
+    description: "",
+    longDescription:
+      "This is a simple, practical checklist to help carers know what to look for - and what to ask - when visiting aged care facilities.",
+    imageSrc: "/images/agedcarechecklist.png",
+    imageAlt: "Aged Care Facility Checklist",
   },
   {
     id: "fr-3",
-    title: "Free Resource 3",
-    description: "Visual + copy coming soon.",
+    title: "Grateful Tides",
+    subtitle: "A simple gratitude journal for carers – even on the hard days",
+    description: "",
+    longDescription:
+      "A carer-friendly gratitude journal designed to help you pause, reflect, and notice small moments - even when life feels heavy.",
+    imageSrc: "/images/gratitude3.jpg",
+    imageAlt: "Grateful Tides",
   },
 ];

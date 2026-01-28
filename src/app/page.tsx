@@ -17,6 +17,7 @@ function BubbleGrid({
     title: string;
     subtitle?: string;
     description: string;
+    longDescription?: string;
     imageSrc?: string;
     imageAlt?: string;
   }[];
@@ -45,7 +46,9 @@ function BubbleGrid({
                 <p className="muted bubbleSubtitle">{item.subtitle}</p>
               ) : null}
             </div>
-            <p className="muted bubbleDesc">{item.description}</p>
+            {item.description?.trim() ? (
+              <p className="muted bubbleDesc">{item.description}</p>
+            ) : null}
           </div>
         </div>
       ))}
