@@ -68,6 +68,25 @@ export default function Home() {
         </Container>
       </section>
 
+
+      <section className="section">
+        <Container>
+          <div className="stack" style={{ gap: 16 }}>
+            <div className="stack" style={{ gap: 6 }}>
+              <h2 className="h2">{site.whyTitle}</h2>
+              <p className="muted" style={{ margin: 0 }}>
+                A clear explanation of why this project exists — and what it’s here to do.
+              </p>
+            </div>
+
+            <div className="prose">
+              {site.whyParagraphs.map((p, idx) => (
+                <p key={`${idx}-${p.slice(0, 16)}`}>{p}</p>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </section>
       <section id="products" className="section">
         <Container>
           <div className="stack" style={{ gap: "1.25rem" }}>
