@@ -166,7 +166,7 @@ main {
 }
 
 .heroLogoImg {
-  height: 84px;
+  height: min(252px, 38vw);
   width: auto;
 }
 

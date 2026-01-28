@@ -22,9 +22,6 @@ export function SiteHeader() {
           </Link>
 
           <nav className="nav">
-            <Link href="/#why" className="navLink">
-              Why
-            </Link>
             <Link href="/#digital-products" className="navLink">
               Digital Products
             </Link>

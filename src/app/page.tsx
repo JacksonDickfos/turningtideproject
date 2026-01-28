@@ -58,10 +58,6 @@ export default function Home() {
                 {site.tagline.suffix}
               </p>
 
-              <p className="muted" style={{ margin: 0 }}>
-                {site.heroDescription}
-              </p>
-
               <div className="buttonRow">
                 <a className="button" href="#digital-products">
                   Explore digital products
