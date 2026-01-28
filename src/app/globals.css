@@ -297,7 +297,7 @@ html[data-scrolled="true"] .siteHeader {
 
 /* Floating card: blush background for the whole panel */
 .floatingHeroPanel.panel {
-  background: var(--blush);
+  background: var(--white);
 }
 
 /* Keep the floating panel smaller, but restore text sizing to the pre-scale visual size */
