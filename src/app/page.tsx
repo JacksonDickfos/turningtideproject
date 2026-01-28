@@ -100,7 +100,7 @@ export default function Home() {
           <div className="floatingCardTop">
             <div className="floatingCardMedia" aria-hidden="true">
               <Image
-                src="/images/brainnew.png"
+                src="/images/braindump.png"
                 alt=""
                 width={800}
                 height={500}
