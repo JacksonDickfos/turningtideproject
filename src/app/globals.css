@@ -292,6 +292,11 @@ html[data-scrolled="true"] .siteHeader {
   transform-origin: bottom right;
 }
 
+/* Floating card: blush background for the whole panel */
+.floatingHeroPanel.panel {
+  background: var(--blush);
+}
+
 /* Keep the floating panel smaller, but restore text sizing to the pre-scale visual size */
 .floatingHeroPanel {
   --floating-text-scale: 1.333333; /* 1 / 0.75 */
