@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import { Container } from "@/components/Container";
 import {
@@ -37,6 +38,16 @@ export default function Home() {
         <Container>
           <div className="heroGrid">
             <div className="stack">
+              <div className="heroLogoWrap" aria-hidden="true">
+                <Image
+                  src="/images/primarylogo.png"
+                  alt=""
+                  width={360}
+                  height={160}
+                  priority
+                  className="heroLogoImg"
+                />
+              </div>
               <h1 className="h1">{site.heroHeading}</h1>
               <p className="muted" style={{ margin: 0, fontSize: 18 }}>
                 {site.heroSubheading}

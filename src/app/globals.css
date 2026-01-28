@@ -118,9 +118,27 @@ main {
   gap: 1rem;
 }
 
-.brand {
-  font-weight: 700;
-  letter-spacing: -0.01em;
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.brandLogo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brandImg {
+  height: 34px;
+  width: auto;
 }
 
 .nav {
@@ -139,6 +157,17 @@ main {
 
 .hero {
   padding: 4.25rem 0 3rem;
+}
+
+.heroLogoWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.25rem;
+}
+
+.heroLogoImg {
+  height: 84px;
+  width: auto;
 }
 
 .heroGrid {
