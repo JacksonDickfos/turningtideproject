@@ -260,6 +260,7 @@ html[data-scrolled="true"] .siteHeader {
   inset: 0;
   pointer-events: none;
   z-index: 0;
+  --tide-rise: clamp(120px, 18vw, 220px);
 }
 
 .heroWaves::before,
@@ -272,12 +273,12 @@ html[data-scrolled="true"] .siteHeader {
   height: 220px;
   opacity: 0.95;
 
-  /* Mask: repeating filled wave shape */
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='220' viewBox='0 0 900 220'%3E%3Cpath d='M0 120 C 140 70 300 170 450 120 S 760 70 900 120 V 220 H 0 Z' fill='%23000'/%3E%3C/svg%3E");
+  /* Mask: repeating filled wave shape (gentler curve) */
+  -webkit-mask-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='220' viewBox='0 0 900 220'%3E%3Cpath d='M0 150 C 150 110 300 190 450 150 S 750 110 900 150 V 220 H 0 Z' fill='%23000'/%3E%3C/svg%3E\");
   -webkit-mask-repeat: repeat-x;
   -webkit-mask-size: 900px 220px;
   -webkit-mask-position: 0 100%;
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='220' viewBox='0 0 900 220'%3E%3Cpath d='M0 120 C 140 70 300 170 450 120 S 760 70 900 120 V 220 H 0 Z' fill='%23000'/%3E%3C/svg%3E");
+  mask-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='220' viewBox='0 0 900 220'%3E%3Cpath d='M0 150 C 150 110 300 190 450 150 S 750 110 900 150 V 220 H 0 Z' fill='%23000'/%3E%3C/svg%3E\");
   mask-repeat: repeat-x;
   mask-size: 900px 220px;
   mask-position: 0 100%;
@@ -292,8 +293,8 @@ html[data-scrolled="true"] .siteHeader {
       color-mix(in oklab, var(--blush) 70%, var(--white) 30%) 38%,
       color-mix(in oklab, var(--sand) 72%, var(--white) 28%) 100%
     );
-  filter: blur(0.2px);
-  animation: beachWaveRoll 14s linear infinite;
+  filter: blur(0.15px);
+  animation: tideInOut 9.5s ease-in-out infinite;
 }
 
 /* Front “foam” edge (thin white highlight) */
@@ -309,7 +310,7 @@ html[data-scrolled="true"] .siteHeader {
       transparent 62%
     );
   filter: blur(0.6px);
-  animation: beachWaveRoll2 9s linear infinite;
+  animation: tideInOutFoam 7.5s ease-in-out infinite;
 }
 
 @keyframes tideDrift {
@@ -321,27 +322,39 @@ html[data-scrolled="true"] .siteHeader {
   }
 }
 
-@keyframes beachWaveRoll {
+@keyframes tideInOut {
   0% {
     -webkit-mask-position: 0 100%;
     mask-position: 0 100%;
-    transform: translateY(0);
+    transform: translate3d(0, 14px, 0);
+  }
+  50% {
+    -webkit-mask-position: 420px 100%;
+    mask-position: 420px 100%;
+    transform: translate3d(0, calc(-1 * var(--tide-rise)), 0);
   }
   100% {
     -webkit-mask-position: 900px 100%;
     mask-position: 900px 100%;
-    transform: translateY(0);
+    transform: translate3d(0, 14px, 0);
   }
 }
 
-@keyframes beachWaveRoll2 {
+@keyframes tideInOutFoam {
   0% {
     -webkit-mask-position: 0 100%;
     mask-position: 0 100%;
+    transform: translate3d(0, 8px, 0);
+  }
+  50% {
+    -webkit-mask-position: -360px 100%;
+    mask-position: -360px 100%;
+    transform: translate3d(0, calc(-1 * (var(--tide-rise) * 0.92)), 0);
   }
   100% {
     -webkit-mask-position: -900px 100%;
     mask-position: -900px 100%;
+    transform: translate3d(0, 8px, 0);
   }
 }
 
