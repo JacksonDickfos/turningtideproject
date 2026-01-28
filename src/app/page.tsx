@@ -142,13 +142,11 @@ export default function Home() {
               ))}
               <p>
                 Hi there, my name is JD Brimblecombe. I am the founder of the Turning
-                Tides Project.{" "}
+                Tides Project.
+                <br />
                 <Link href="/about">
-                  Click here if you'd like to read about my story.
+                  <strong>Click here if you'd like to read about my story.</strong>
                 </Link>
-              </p>
-              <p className="whyDivider" aria-hidden="true">
-                ____
               </p>
             </div>
           </div>
