@@ -19,7 +19,8 @@ export const site = {
 
   whyTitle: "Why Turning Tides Project?",
   whyParagraphs: [
-    "The Turning Tides Project was created to shine a light on unpaid carers and the incredible work they do.\nCaring for someone you love should not leave you feeling overwhelmed, exhausted, or lost.\n\nWe offer practical tools and guidance to help carers clear the mental load, protect their energy,\nand feel more like themselves again while continuing to care.",
+    "The Turning Tides Project was created to shine a light on unpaid carers and the incredible work they do.\nCaring for someone you love should not leave you feeling overwhelmed, exhausted, or lost.",
+    "We offer practical tools and guidance to help carers clear the mental load, protect their energy,\nand feel more like themselves again while continuing to care.",
     "For many carers, life can feel like a tide that never stops coming in.\nResponsibilities, worry, decisions, and emotional weight can arrive wave after wave, day after day.",
     "Turning the tide does not mean the caring ends. It means you no longer feel pulled under by the weight of it all and, most importantly, you begin to feel like yourself again.",
     "The Turning Tides Project exists to help create that shift.",
