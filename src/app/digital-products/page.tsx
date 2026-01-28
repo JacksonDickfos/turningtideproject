@@ -10,12 +10,9 @@ export default function DigitalProductsPage() {
       <Container>
         <div className="stack" style={{ gap: "1.5rem" }}>
           <div className="stack" style={{ gap: 10 }}>
-            <p className="muted" style={{ margin: 0 }}>
-              Digital Products
-            </p>
             <h1 className="h1">Explore digital products</h1>
             <p className="muted" style={{ margin: 0 }}>
-              This page will become the full storefront with visuals, detailed descriptions, and checkout links.
+              Instantly downloadable tools to make caring feel less overwhelming.
             </p>
           </div>
 

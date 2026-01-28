@@ -10,12 +10,9 @@ export default function FreeResourcesPage() {
       <Container>
         <div className="stack" style={{ gap: "1.5rem" }}>
           <div className="stack" style={{ gap: 10 }}>
-            <p className="muted" style={{ margin: 0 }}>
-              Free Resources
-            </p>
             <h1 className="h1">Free resources</h1>
             <p className="muted" style={{ margin: 0 }}>
-              This page will expand with downloadable tools, guides, and helpful links.
+              Small tools that can make a big difference. Instant download. Use straight away.
             </p>
           </div>
 
