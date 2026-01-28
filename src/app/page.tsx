@@ -123,7 +123,7 @@ export default function Home() {
               Free PDF Download
             </Link>
             <p className="muted floatingCardNote" style={{ margin: 0 }}>
-              Takes 30 seconds
+              Instant Access
             </p>
           </div>
         </div>
