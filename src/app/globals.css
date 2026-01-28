@@ -166,7 +166,7 @@ main {
 }
 
 .heroLogoImg {
-  height: min(252px, 38vw);
+  height: min(504px, 76vw);
   width: auto;
 }
 
@@ -210,6 +210,12 @@ main {
   letter-spacing: -0.02em;
   font-weight: 800;
   line-height: 1.05;
+}
+
+.heroTitleBlock {
+  display: grid;
+  gap: 0.5rem;
+  justify-items: center;
 }
 
 .floatingHeroPanel {

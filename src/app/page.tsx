@@ -42,21 +42,23 @@ export default function Home() {
                 <Image
                   src="/images/primarylogo.png"
                   alt=""
-                  width={360}
-                  height={160}
+                  width={720}
+                  height={320}
                   priority
                   className="heroLogoImg"
                 />
               </div>
-              <h1 className="h1 heroHeading">
-                <span className="heroHeadingTop">{site.heroHeading.top}</span>
-                <span className="heroHeadingBottom">
-                  {site.heroHeading.bottom}
-                </span>
-              </h1>
-              <p className="muted" style={{ margin: 0, fontSize: 18 }}>
-                {site.heroSubheading}
-              </p>
+              <div className="heroTitleBlock">
+                <h1 className="h1 heroHeading">
+                  <span className="heroHeadingTop">{site.heroHeading.top}</span>
+                  <span className="heroHeadingBottom">
+                    {site.heroHeading.bottom}
+                  </span>
+                </h1>
+                <p className="muted" style={{ margin: 0, fontSize: 18 }}>
+                  {site.heroSubheading}
+                </p>
+              </div>
               <p className="muted" style={{ margin: 0 }}>
                 {site.tagline.prefix}
                 <span className="sheenWord">{site.tagline.emphasis}</span>
