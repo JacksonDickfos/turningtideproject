@@ -1,6 +1,7 @@
 export type PreviewItem = {
   id: string;
   title: string;
+  subtitle?: string;
   description: string;
   imageSrc?: string;
   imageAlt?: string;
@@ -30,18 +31,30 @@ export const digitalProductsPreview: PreviewItem[] = [
 export const coursesPreview: PreviewItem[] = [
   {
     id: "c-1",
-    title: "Course 1",
-    description: "Coming soon.",
+    title: "Clear the Chaos",
+    subtitle: "Getting organised for carers",
+    description:
+      "A practical course to help you get things out of your head and into simple systems that actually work for carers.\nLess mental overload. More clarity. No complicated setups.",
+    imageSrc: "/images/clearthechaos.png",
+    imageAlt: "Clear the Chaos",
   },
   {
     id: "c-2",
-    title: "Course 2",
-    description: "Coming soon.",
+    title: "Reclaiming You",
+    subtitle: "Self-care for carers",
+    description:
+      "A realistic approach to self-care that fits around caring - not another thing to feel guilty about.\nDesigned to help you protect your energy, reduce burnout, and reconnect with yourself again.",
+    imageSrc: "/images/reclaimingyou.png",
+    imageAlt: "Reclaiming You",
   },
   {
     id: "c-3",
-    title: "Course 3",
-    description: "Coming soon.",
+    title: "Protect Your Energy",
+    subtitle: "Setting boundaries for carers",
+    description:
+      "Learn how to set boundaries without guilt, conflict, or feeling selfish.\nThis course helps you say no when you need to - and yes to what actually matters.",
+    imageSrc: "/images/protectyourenergy.png",
+    imageAlt: "Protect Your Energy",
   },
 ];
 

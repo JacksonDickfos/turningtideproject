@@ -15,6 +15,7 @@ function BubbleGrid({
   items: {
     id: string;
     title: string;
+    subtitle?: string;
     description: string;
     imageSrc?: string;
     imageAlt?: string;
@@ -39,7 +40,12 @@ function BubbleGrid({
           </div>
           <div className="stack" style={{ gap: 6 }}>
             <h3 className="h3">{item.title}</h3>
-            <p className="muted" style={{ margin: 0 }}>
+            {item.subtitle ? (
+              <p className="muted" style={{ margin: 0, fontWeight: 600 }}>
+                {item.subtitle}
+              </p>
+            ) : null}
+            <p className="muted" style={{ margin: 0, whiteSpace: "pre-line" }}>
               {item.description}
             </p>
           </div>
