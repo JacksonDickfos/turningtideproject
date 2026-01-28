@@ -34,7 +34,7 @@ export const coursesPreview: PreviewItem[] = [
     title: "Clear the Chaos",
     subtitle: "Getting organised for carers",
     description:
-      "A practical course to help you get things out of your head and into simple systems that actually work for carers.\nLess mental overload. More clarity. No complicated setups.",
+      "A practical course to help you get things out of your head and into simple systems that actually work for carers.",
     imageSrc: "/images/clearthechaos.png",
     imageAlt: "Clear the Chaos",
   },
@@ -43,7 +43,7 @@ export const coursesPreview: PreviewItem[] = [
     title: "Reclaiming You",
     subtitle: "Self-care for carers",
     description:
-      "A realistic approach to self-care that fits around caring - not another thing to feel guilty about.\nDesigned to help you protect your energy, reduce burnout, and reconnect with yourself again.",
+      "A realistic approach to self-care that fits around caring - not another thing to feel guilty about.",
     imageSrc: "/images/reclaimingyou.png",
     imageAlt: "Reclaiming You",
   },
@@ -52,7 +52,7 @@ export const coursesPreview: PreviewItem[] = [
     title: "Protect Your Energy",
     subtitle: "Setting boundaries for carers",
     description:
-      "Learn how to set boundaries without guilt, conflict, or feeling selfish.\nThis course helps you say no when you need to - and yes to what actually matters.",
+      "Learn how to set boundaries without guilt, conflict, or feeling selfish.",
     imageSrc: "/images/protectyourenergy.png",
     imageAlt: "Protect Your Energy",
   },
