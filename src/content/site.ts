@@ -1,6 +1,10 @@
 export const site = {
   name: "Turning Tide Project",
   domain: "turningtideproject.com",
+
+  heroHeading: "THE TURNING TIDES PROJECT",
+  heroSubheading: "“Turning Tides, Changing Lives”",
+
   tagline: {
     prefix: "Digital books, courses, and tools to help ",
     emphasis: "Carers",

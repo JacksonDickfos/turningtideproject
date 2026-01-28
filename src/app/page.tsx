@@ -13,10 +13,16 @@ export default function Home() {
         <Container>
           <div className="heroGrid">
             <div className="stack">
-              <p className="muted" style={{ margin: 0 }}>
-                {site.tagline.prefix}<span className="sheenWord">{site.tagline.emphasis}</span>{site.tagline.suffix}
+              <h1 className="h1">{site.heroHeading}</h1>
+              <p className="muted" style={{ margin: 0, fontSize: 18 }}>
+                {site.heroSubheading}
               </p>
-              <h1 className="h1">Build momentum with resources you can use today.</h1>
+              <p className="muted" style={{ margin: 0 }}>
+                {site.tagline.prefix}
+                <span className="sheenWord">{site.tagline.emphasis}</span>
+                {site.tagline.suffix}
+              </p>
+
               <p className="muted" style={{ margin: 0 }}>
                 {site.heroDescription}
               </p>
