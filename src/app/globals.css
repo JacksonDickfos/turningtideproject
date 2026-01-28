@@ -238,8 +238,10 @@ html[data-scrolled="true"] .siteHeader {
 /* Center-align hero text now that the panel floats */
 .hero .heroGrid > .stack {
   align-items: center;
+  justify-items: center;
   text-align: center;
   max-width: 70ch;
+  margin-inline: auto;
 }
 
 .heroHeading {
