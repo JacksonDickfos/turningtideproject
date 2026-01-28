@@ -292,6 +292,29 @@ html[data-scrolled="true"] .siteHeader {
   transform-origin: bottom right;
 }
 
+/* Keep the floating panel smaller, but restore text sizing to the pre-scale visual size */
+.floatingHeroPanel {
+  --floating-text-scale: 1.333333; /* 1 / 0.75 */
+}
+
+.floatingHeroPanel .h3 {
+  font-size: calc(1.2rem * var(--floating-text-scale));
+}
+
+.floatingHeroPanel .floatingCardDesc {
+  font-size: calc(1rem * var(--floating-text-scale));
+}
+
+.floatingHeroPanel .floatingCardFooter .button {
+  font-size: calc(1rem * var(--floating-text-scale));
+}
+
+.floatingHeroPanel .floatingCardNote {
+  font-size: calc(0.9rem * var(--floating-text-scale));
+  text-align: center;
+  width: 100%;
+}
+
 .floatingCard {
   display: grid;
   gap: 1rem;
