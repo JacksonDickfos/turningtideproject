@@ -63,7 +63,8 @@ export const freeResourcesPreview: PreviewItem[] = [
   {
     id: "fr-1",
     title: "The Brain Dump",
-    description: "Brain won't switch off. Mentally overloaded? Start here.",
+    subtitle: "Brain won't switch off. Mentally overloaded? Start here.",
+    description: "",
     imageSrc: "/images/braindump.png",
     imageAlt: "The Brain Dump",
   },

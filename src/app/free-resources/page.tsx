@@ -42,9 +42,6 @@ export default function FreeResourcesPage() {
                   {item.description?.trim() ? (
                     <p className="muted bubbleDesc">{item.description}</p>
                   ) : null}
-                  {item.longDescription?.trim() ? (
-                    <p className="muted bubbleDesc">{item.longDescription}</p>
-                  ) : null}
                 </div>
               </div>
             ))}

@@ -629,6 +629,12 @@ dd {
 }
 
 .bubbleSubtitle {
+  font-weight: 400;
+}
+
+/* Keep course subtitles slightly emphasized */
+.coursesSection .bubbleSubtitle,
+#courses .bubbleSubtitle {
   font-weight: 600;
 }
 
