@@ -27,7 +27,7 @@
   --container: 1100px;
   --radius: 16px;
   --radius-button: 10px;
-  --scroll-offset: 80px;
+  --scroll-offset: 50px;
   --shadow: 0 10px 30px color-mix(in oklab, var(--fg) 12%, var(--bg) 88%);
 }
 
