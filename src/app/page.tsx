@@ -67,38 +67,38 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-
-            <aside className="panel">
-              <div className="panelInner stack">
-                <h2 className="h3" style={{ margin: 0 }}>
-                  What you’ll find here
-                </h2>
-                <p className="muted" style={{ margin: 0 }}>
-                  Digital products now. Courses and free resources rolling out soon.
-                </p>
-                <div className="stack" style={{ gap: 10 }}>
-                  <div className="metaRow" style={{ borderTopStyle: "solid" }}>
-                    <span>Why Turning Tides Project</span>
-                    <span className="muted">Read below</span>
-                  </div>
-                  <div className="metaRow" style={{ borderTopStyle: "solid" }}>
-                    <span>Digital products</span>
-                    <span className="muted">Preview + page</span>
-                  </div>
-                  <div className="metaRow" style={{ borderTopStyle: "solid" }}>
-                    <span>Courses</span>
-                    <span className="muted">Coming soon</span>
-                  </div>
-                  <div className="metaRow" style={{ borderTopStyle: "solid" }}>
-                    <span>Free resources</span>
-                    <span className="muted">Preview + page</span>
-                  </div>
-                </div>
-              </div>
-            </aside>
           </div>
         </Container>
       </section>
+
+      <aside className="panel floatingHeroPanel" aria-label="Quick navigation">
+        <div className="panelInner stack">
+          <h2 className="h3" style={{ margin: 0 }}>
+            What you’ll find here
+          </h2>
+          <p className="muted" style={{ margin: 0 }}>
+            Digital products now. Courses and free resources rolling out soon.
+          </p>
+          <div className="stack" style={{ gap: 10 }}>
+            <a className="metaRow metaRowLink" href="#why">
+              <span>Why Turning Tides Project</span>
+              <span className="muted">Read below</span>
+            </a>
+            <a className="metaRow metaRowLink" href="#digital-products">
+              <span>Digital products</span>
+              <span className="muted">Preview + page</span>
+            </a>
+            <a className="metaRow metaRowLink" href="#courses">
+              <span>Courses</span>
+              <span className="muted">Coming soon</span>
+            </a>
+            <a className="metaRow metaRowLink" href="#free-resources">
+              <span>Free resources</span>
+              <span className="muted">Preview + page</span>
+            </a>
+          </div>
+        </div>
+      </aside>
 
       <section className="section" id="why">
         <Container>
