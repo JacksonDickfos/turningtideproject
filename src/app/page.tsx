@@ -55,7 +55,7 @@ export default function Home() {
                     {site.heroHeading.bottom}
                   </span>
                 </h1>
-                <p className="muted" style={{ margin: 0, fontSize: 18 }}>
+                <p className="muted heroSubheading" style={{ margin: 0 }}>
                   {site.heroSubheading}
                 </p>
               </div>
