@@ -467,8 +467,6 @@ dd {
 /* Section variants */
 .band {
   background: var(--surface);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
 }
 
 /* Simple readable paragraph styling for long-form blocks */
