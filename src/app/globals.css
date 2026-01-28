@@ -486,6 +486,20 @@ dd {
 .siteFooterInner {
   display: grid;
   gap: 0.25rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.footerLogoWrap {
+  display: grid;
+  place-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.footerLogoImg {
+  width: min(360px, 70vw);
+  height: auto;
+  display: block;
 }
 
 /* (Sheen/gradient animation removed per brand direction) */
