@@ -510,7 +510,7 @@ dd {
 }
 
 .footerLogoImg {
-  width: min(360px, 70vw);
+  width: min(270px, 52.5vw);
   height: auto;
   display: block;
 }
