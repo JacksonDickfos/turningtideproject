@@ -705,8 +705,8 @@ dd {
 }
 
 .aboutAvatar {
-  width: 168px;
-  height: 168px;
+  width: min(294px, 70vw);
+  height: min(294px, 70vw);
   border-radius: 999px;
   overflow: hidden;
   border: 1px solid var(--border);
