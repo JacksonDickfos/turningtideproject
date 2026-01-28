@@ -727,8 +727,13 @@ dd {
 
 .whySection .prose a {
   color: var(--accent);
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 0.15em;
+}
+
+.whySection .prose a:hover,
+.whySection .prose a:focus-visible {
+  text-decoration: underline;
 }
 
 .prose p {

@@ -141,8 +141,10 @@ export default function Home() {
                 <p key={`${idx}-${p.slice(0, 16)}`}>{p}</p>
               ))}
               <p>
-                Hi there, my name is JD Brimblecombe. I am the founder of the Turning
-                Tides Project.
+                <strong>
+                  Hi there, my name is JD Brimblecombe. I am the founder of the
+                  Turning Tides Project.
+                </strong>
                 <br />
                 <Link href="/about">
                   <strong>Click here if you'd like to read about my story.</strong>
