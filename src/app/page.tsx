@@ -48,7 +48,12 @@ export default function Home() {
                   className="heroLogoImg"
                 />
               </div>
-              <h1 className="h1">{site.heroHeading}</h1>
+              <h1 className="h1 heroHeading">
+                <span className="heroHeadingTop">{site.heroHeading.top}</span>
+                <span className="heroHeadingBottom">
+                  {site.heroHeading.bottom}
+                </span>
+              </h1>
               <p className="muted" style={{ margin: 0, fontSize: 18 }}>
                 {site.heroSubheading}
               </p>

@@ -191,6 +191,27 @@ main {
   max-width: 70ch;
 }
 
+.heroHeading {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 0.2em;
+}
+
+.heroHeadingTop {
+  font-size: 0.42em;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.heroHeadingBottom {
+  font-size: 1em;
+  letter-spacing: -0.02em;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
 .floatingHeroPanel {
   position: fixed;
   right: 24px;
