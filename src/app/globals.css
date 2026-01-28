@@ -27,6 +27,7 @@
   --container: 1100px;
   --radius: 16px;
   --radius-button: 10px;
+  --scroll-offset: 110px;
   --shadow: 0 10px 30px color-mix(in oklab, var(--fg) 12%, var(--bg) 88%);
 }
 
@@ -37,6 +38,17 @@
 html,
 body {
   height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-offset);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
@@ -73,6 +85,11 @@ main {
 
 .section {
   padding: 3.5rem 0;
+}
+
+/* Anchor offsets for sticky header */
+section[id] {
+  scroll-margin-top: var(--scroll-offset);
 }
 
 .stack {
