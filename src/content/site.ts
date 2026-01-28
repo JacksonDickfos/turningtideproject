@@ -1,5 +1,5 @@
 export const site = {
-  name: "Turning Tide Project",
+  name: "Turning Tides Project",
   domain: "turningtideproject.com",
 
   heroHeading: "THE TURNING TIDES PROJECT",
