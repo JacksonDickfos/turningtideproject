@@ -18,7 +18,7 @@ export default function CoursesPage() {
 
           <div className="bubbleGrid">
             {coursesPreview.map((item) => (
-              <div key={item.id} className="bubble">
+              <div key={item.id} className={`bubble bubble--${item.id}`}>
                 <div className="bubbleMedia" style={{ overflow: "hidden" }}>
                   {item.imageSrc ? (
                     <Image
@@ -26,7 +26,7 @@ export default function CoursesPage() {
                       alt={item.imageAlt ?? ""}
                       width={800}
                       height={500}
-                      style={{ width: "100%", height: "100%", objectFit: "contain" }}
+                      className="bubbleImage"
                     />
                   ) : (
                     "Coming soon"

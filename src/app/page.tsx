@@ -25,7 +25,7 @@ function BubbleGrid({
   return (
     <div className="bubbleGrid">
       {items.map((item) => (
-        <div key={item.id} className="bubble">
+        <div key={item.id} className={`bubble bubble--${item.id}`}>
           <div className="bubbleMedia" style={{ overflow: "hidden" }}>
             {item.imageSrc ? (
               <Image
@@ -33,7 +33,7 @@ function BubbleGrid({
                 alt={item.imageAlt ?? ""}
                 width={800}
                 height={500}
-                style={{ width: "100%", height: "100%", objectFit: "contain" }}
+                className="bubbleImage"
               />
             ) : (
               "Visual coming soon"
