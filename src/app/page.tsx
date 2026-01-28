@@ -64,15 +64,6 @@ export default function Home() {
                 <span className="sheenWord">{site.tagline.emphasis}</span>
                 {site.tagline.suffix}
               </p>
-
-              <div className="buttonRow">
-                <a className="button" href="#digital-products">
-                  Explore digital products
-                </a>
-                <Link className="button secondary" href="/about">
-                  Read my story
-                </Link>
-              </div>
             </div>
           </div>
         </Container>
