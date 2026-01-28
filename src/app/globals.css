@@ -164,12 +164,29 @@ html[data-scrolled="true"] .siteHeader {
 }
 
 .navLink {
-  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  background: var(--sand);
+  color: var(--olive);
   font-weight: 700;
+  border: 1px solid color-mix(in oklab, var(--olive) 22%, var(--sand) 78%);
+  transition: filter 160ms ease, background-color 160ms ease,
+    border-color 160ms ease;
 }
 
 .navLink:hover {
-  color: var(--fg);
+  text-decoration: none;
+  filter: brightness(0.98);
+  background: color-mix(in oklab, var(--sand) 85%, var(--white) 15%);
+  border-color: color-mix(in oklab, var(--olive) 32%, var(--sand) 68%);
+}
+
+.navLink:focus-visible {
+  outline: 3px solid color-mix(in oklab, var(--olive) 55%, var(--white) 45%);
+  outline-offset: 3px;
 }
 
 .hero {
