@@ -157,7 +157,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="section band coursesSection" id="courses">
+      <section className="section band" id="courses">
         <Container>
           <div className="stack" style={{ gap: 16 }}>
             <div className="sectionHeader">
@@ -177,7 +177,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="section freeResourcesSection" id="free-resources">
+      <section className="section" id="free-resources">
         <Container>
           <div className="stack" style={{ gap: 16 }}>
             <div className="sectionHeader">
