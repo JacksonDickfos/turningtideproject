@@ -140,11 +140,10 @@ export default function Home() {
               {site.whyParagraphs.map((p, idx) => (
                 <p key={`${idx}-${p.slice(0, 16)}`}>{p}</p>
               ))}
-              <p>
-                <strong>
-                  Hi there, my name is JD Brimblecombe. I am the founder of the
-                  Turning Tides Project.
-                </strong>
+              <p className="whyFounder">
+                <strong>Hi there, my name is JD Brimblecombe.</strong>
+                <br />
+                <strong>I am the founder of the Turning Tides Project.</strong>
                 <br />
                 <Link href="/about">
                   <strong>Click here if you'd like to read about my story.</strong>

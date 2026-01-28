@@ -759,6 +759,10 @@ dd {
   text-decoration: underline;
 }
 
+.whyFounder {
+  font-size: calc(1em + 2px);
+}
+
 .prose p {
   margin: 0;
 }
