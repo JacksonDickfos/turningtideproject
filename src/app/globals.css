@@ -106,8 +106,13 @@ main {
   top: 0;
   z-index: 10;
   background: color-mix(in oklab, var(--bg) 88%, transparent);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid transparent;
   backdrop-filter: saturate(180%) blur(12px);
+  transition: border-color 180ms ease;
+}
+
+html[data-scrolled="true"] .siteHeader {
+  border-bottom-color: var(--border);
 }
 
 .siteHeaderInner {
