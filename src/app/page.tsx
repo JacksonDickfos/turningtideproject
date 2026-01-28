@@ -174,7 +174,7 @@ export default function Home() {
                 </p>
               </div>
               <Link className="button secondary" href="/courses">
-                Learn more
+                View all
               </Link>
             </div>
 
