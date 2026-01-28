@@ -87,51 +87,53 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="section">
+      <section className="section band">
         <Container>
-          <div className="grid cols2">
-            <div className="panel">
-              <div className="panelInner stack">
-                <h2 className="h2">{about.shortTitle}</h2>
-
-                <div className="stack" style={{ gap: 12 }}>
-                  {about.shortParagraphs.map((p, idx) => (
-                    <p key={`${idx}-${p.slice(0, 16)}`} className="muted" style={{ margin: 0 }}>
-                      {p}
-                    </p>
-                  ))}
-                </div>
-
-                <div className="buttonRow">
-                  <Link className="button secondary" href="/about">
-                    Read the full story
-                  </Link>
-                </div>
-              </div>
+          <div className="stack" style={{ gap: 16 }}>
+            <div className="stack" style={{ gap: 6 }}>
+              <h2 className="h2">{about.shortTitle}</h2>
+              <p className="muted" style={{ margin: 0 }}>
+                A short version of my story — and why The Turning Tides Project exists.
+              </p>
             </div>
 
-            <div className="panel">
-              <div className="panelInner stack">
-                <h2 className="h2" id="courses">
-                  Courses & modules
-                </h2>
-                <p className="muted" style={{ margin: 0 }}>
-                  These are being built now. We’ll add a waitlist/signup next.
-                </p>
-                <div className="stack" style={{ gap: 10 }}>
-                  <div className="metaRow" style={{ borderTopStyle: "solid" }}>
-                    <span>Foundations course</span>
-                    <span className="muted">Soon</span>
-                  </div>
-                  <div className="metaRow" style={{ borderTopStyle: "solid" }}>
-                    <span>Weekly modules</span>
-                    <span className="muted">Soon</span>
-                  </div>
-                  <div className="metaRow" style={{ borderTopStyle: "solid" }}>
-                    <span>Workbooks & templates</span>
-                    <span className="muted">Soon</span>
-                  </div>
-                </div>
+            <div className="prose">
+              {about.shortParagraphs.map((p, idx) => (
+                <p key={`${idx}-${p.slice(0, 16)}`}>{p}</p>
+              ))}
+            </div>
+
+            <div className="buttonRow">
+              <Link className="button secondary" href="/about">
+                Read the full story
+              </Link>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="section" id="courses">
+        <Container>
+          <div className="stack" style={{ gap: 16 }}>
+            <div className="stack" style={{ gap: 6 }}>
+              <h2 className="h2">Courses & modules</h2>
+              <p className="muted" style={{ margin: 0 }}>
+                These are being built now. We’ll add a waitlist/signup next.
+              </p>
+            </div>
+
+            <div className="list">
+              <div className="listRow">
+                <span>Foundations course</span>
+                <span className="muted">Soon</span>
+              </div>
+              <div className="listRow">
+                <span>Weekly modules</span>
+                <span className="muted">Soon</span>
+              </div>
+              <div className="listRow">
+                <span>Workbooks & templates</span>
+                <span className="muted">Soon</span>
               </div>
             </div>
           </div>
