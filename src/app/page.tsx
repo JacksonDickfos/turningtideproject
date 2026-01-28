@@ -112,7 +112,7 @@ export default function Home() {
                 The Brain Dump
               </h2>
               <p className="muted floatingCardDesc" style={{ margin: 0 }}>
-                Brain won&apos;t switch off. Mentally overloaded? Start here.
+                Mentally overloaded? Start here.
               </p>
             </div>
           </div>
@@ -122,7 +122,7 @@ export default function Home() {
               Free PDF Download
             </Link>
             <p className="muted floatingCardNote" style={{ margin: 0 }}>
-              Takes 5 minutes
+              Get it immediately
             </p>
           </div>
         </div>
