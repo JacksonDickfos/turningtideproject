@@ -48,10 +48,10 @@ export const coursesPreview: PreviewItem[] = [
 export const freeResourcesPreview: PreviewItem[] = [
   {
     id: "fr-1",
-    title: "Brain Dump",
+    title: "The Brain Dump",
     description: "Brain won't switch off. Mentally overloaded? Start here.",
     imageSrc: "/images/braindump.png",
-    imageAlt: "Brain Dump",
+    imageAlt: "The Brain Dump",
   },
   {
     id: "fr-2",
