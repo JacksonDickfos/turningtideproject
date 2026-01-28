@@ -891,6 +891,18 @@ dd {
   height: 86%;
 }
 
+/* Free resources cards 2 + 3: white media background + 25% smaller image */
+.bubble--fr-2 .bubbleMedia,
+.bubble--fr-3 .bubbleMedia {
+  background: var(--white);
+}
+
+.bubble--fr-2 .bubbleImage,
+.bubble--fr-3 .bubbleImage {
+  width: 75%;
+  height: 75%;
+}
+
 .bubbleText {
   display: grid;
   gap: 0.75rem;
