@@ -60,6 +60,7 @@ export default function Home() {
   return (
     <>
       <section className="hero">
+        <div className="heroWaves" aria-hidden="true" />
         <Container>
           <div className="heroGrid">
             <div className="stack">

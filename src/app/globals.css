@@ -249,26 +249,67 @@ html[data-scrolled="true"] .siteHeader {
   animation: tideDrift 18s ease-in-out infinite alternate;
 }
 
-.hero::after {
-  content: "";
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Rolling “beach wave” band at the bottom of the hero */
+.heroWaves {
   position: absolute;
   inset: 0;
   pointer-events: none;
   z-index: 0;
-
-  /* Light olive wave strokes to make the tide effect perceptible */
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='220' viewBox='0 0 900 220'%3E%3Cpath d='M0 140 C 150 100 300 180 450 140 S 750 100 900 140' fill='none' stroke='%23708238' stroke-width='6' stroke-linecap='round' stroke-opacity='0.18'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  background-size: 900px 220px;
-  background-position: 0 40px;
-  opacity: 0.9;
-  filter: blur(0.3px);
-  animation: waveSweep 14s linear infinite;
 }
 
-.hero .container {
-  position: relative;
-  z-index: 1;
+.heroWaves::before,
+.heroWaves::after {
+  content: "";
+  position: absolute;
+  left: -20%;
+  right: -20%;
+  bottom: -6px;
+  height: 220px;
+  opacity: 0.95;
+
+  /* Mask: repeating filled wave shape */
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='220' viewBox='0 0 900 220'%3E%3Cpath d='M0 120 C 140 70 300 170 450 120 S 760 70 900 120 V 220 H 0 Z' fill='%23000'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: repeat-x;
+  -webkit-mask-size: 900px 220px;
+  -webkit-mask-position: 0 100%;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='220' viewBox='0 0 900 220'%3E%3Cpath d='M0 120 C 140 70 300 170 450 120 S 760 70 900 120 V 220 H 0 Z' fill='%23000'/%3E%3C/svg%3E");
+  mask-repeat: repeat-x;
+  mask-size: 900px 220px;
+  mask-position: 0 100%;
+}
+
+/* Back wave (sand/blush body) */
+.heroWaves::before {
+  background:
+    linear-gradient(
+      180deg,
+      transparent 0%,
+      color-mix(in oklab, var(--blush) 70%, var(--white) 30%) 38%,
+      color-mix(in oklab, var(--sand) 72%, var(--white) 28%) 100%
+    );
+  filter: blur(0.2px);
+  animation: beachWaveRoll 14s linear infinite;
+}
+
+/* Front “foam” edge (thin white highlight) */
+.heroWaves::after {
+  height: 200px;
+  bottom: -2px;
+  opacity: 0.75;
+  background:
+    linear-gradient(
+      180deg,
+      transparent 0%,
+      color-mix(in oklab, var(--white) 92%, var(--blush) 8%) 46%,
+      transparent 62%
+    );
+  filter: blur(0.6px);
+  animation: beachWaveRoll2 9s linear infinite;
 }
 
 @keyframes tideDrift {
@@ -280,12 +321,27 @@ html[data-scrolled="true"] .siteHeader {
   }
 }
 
-@keyframes waveSweep {
+@keyframes beachWaveRoll {
   0% {
-    background-position: 0 40px;
+    -webkit-mask-position: 0 100%;
+    mask-position: 0 100%;
+    transform: translateY(0);
   }
   100% {
-    background-position: 900px 40px;
+    -webkit-mask-position: 900px 100%;
+    mask-position: 900px 100%;
+    transform: translateY(0);
+  }
+}
+
+@keyframes beachWaveRoll2 {
+  0% {
+    -webkit-mask-position: 0 100%;
+    mask-position: 0 100%;
+  }
+  100% {
+    -webkit-mask-position: -900px 100%;
+    mask-position: -900px 100%;
   }
 }
 
@@ -294,7 +350,8 @@ html[data-scrolled="true"] .siteHeader {
     animation: none;
     transform: none;
   }
-  .hero::after {
+  .heroWaves::before,
+  .heroWaves::after {
     animation: none;
   }
 }
