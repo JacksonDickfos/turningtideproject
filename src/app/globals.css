@@ -14,6 +14,7 @@
   --fg: var(--black);
   --accent: var(--olive);
   --accentSoft: var(--sand);
+  --accentHover: color-mix(in oklab, var(--accent) 88%, black 12%);
 
   --border: color-mix(in oklab, var(--accent) 22%, var(--surface) 78%);
   --muted: color-mix(in oklab, var(--fg) 58%, var(--bg) 42%);
@@ -198,7 +199,7 @@ html[data-scrolled="true"] .siteHeader {
 .navLink:hover {
   text-decoration: none;
   filter: brightness(1.02);
-  background: color-mix(in oklab, var(--olive) 88%, black 12%);
+  background: var(--accentHover);
 }
 
 .navLink:focus-visible {
@@ -418,6 +419,11 @@ html[data-scrolled="true"] .siteHeader {
 .button:hover {
   filter: brightness(1.03);
   text-decoration: none;
+}
+
+.button:not(.secondary):hover {
+  filter: brightness(1.02);
+  background: var(--accentHover);
 }
 
 .button.secondary {
