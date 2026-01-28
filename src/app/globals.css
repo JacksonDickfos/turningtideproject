@@ -486,6 +486,10 @@ dd {
   text-align: center;
 }
 
+.whySection .prose p {
+  white-space: pre-line;
+}
+
 .prose p {
   margin: 0;
 }
