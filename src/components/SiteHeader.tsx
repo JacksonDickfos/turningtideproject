@@ -13,7 +13,7 @@ export function SiteHeader() {
               Digital Products
             </Link>
             <Link href="/#courses" className="navLink">
-              Courses
+              Mini Courses
             </Link>
             <Link href="/#free-resources" className="navLink">
               Free Resources

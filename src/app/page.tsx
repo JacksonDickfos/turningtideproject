@@ -162,7 +162,7 @@ export default function Home() {
           <div className="stack" style={{ gap: 16 }}>
             <div className="sectionHeader">
               <div className="stack" style={{ gap: 6 }}>
-                <h2 className="h2">Courses</h2>
+                <h2 className="h2">Mini Courses</h2>
                 <p className="muted" style={{ margin: 0 }}>
                   Coming soon.
                 </p>
