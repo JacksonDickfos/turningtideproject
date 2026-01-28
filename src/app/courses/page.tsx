@@ -32,16 +32,14 @@ export default function CoursesPage() {
                     "Coming soon"
                   )}
                 </div>
-                <div className="stack" style={{ gap: 6 }}>
-                  <h2 className="h3">{item.title}</h2>
-                  {item.subtitle ? (
-                    <p className="muted" style={{ margin: 0, fontWeight: 600 }}>
-                      {item.subtitle}
-                    </p>
-                  ) : null}
-                  <p className="muted" style={{ margin: 0, whiteSpace: "pre-line" }}>
-                    {item.description}
-                  </p>
+                <div className="bubbleText">
+                  <div className="bubbleTitleGroup">
+                    <h2 className="h3">{item.title}</h2>
+                    {item.subtitle ? (
+                      <p className="muted bubbleSubtitle">{item.subtitle}</p>
+                    ) : null}
+                  </div>
+                  <p className="muted bubbleDesc">{item.description}</p>
                 </div>
               </div>
             ))}

@@ -589,3 +589,26 @@ dd {
   place-items: center;
   font-size: 14px;
 }
+
+.bubbleText {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.bubbleTitleGroup {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.bubbleSubtitle,
+.bubbleDesc {
+  margin: 0;
+}
+
+.bubbleSubtitle {
+  font-weight: 600;
+}
+
+.bubbleDesc {
+  white-space: pre-line;
+}
