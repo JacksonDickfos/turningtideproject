@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import { Container } from "@/components/Container";
 import { about } from "@/content/about";
@@ -8,10 +9,16 @@ export default function AboutPage() {
     <section className="section">
       <Container>
         <div className="stack" style={{ gap: "1.5rem" }}>
-          <div className="stack" style={{ gap: 10 }}>
-            <p className="muted" style={{ margin: 0 }}>
-              About
-            </p>
+          <div className="stack aboutHeader" style={{ gap: 10 }}>
+            <div className="aboutAvatar" aria-hidden="true">
+              <Image
+                src="/images/JD.png"
+                alt=""
+                width={320}
+                height={320}
+                className="aboutAvatarImg"
+              />
+            </div>
             <h1 className="h1">{about.longTitle}</h1>
           </div>
 

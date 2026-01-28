@@ -698,6 +698,29 @@ dd {
   display: block;
 }
 
+/* About page */
+.aboutHeader {
+  justify-items: center;
+  text-align: center;
+}
+
+.aboutAvatar {
+  width: 168px;
+  height: 168px;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--sand);
+  box-shadow: var(--shadow);
+}
+
+.aboutAvatarImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 /* (Sheen/gradient animation removed per brand direction) */
 
 /* Section variants */
