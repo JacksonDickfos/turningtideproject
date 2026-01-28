@@ -217,7 +217,7 @@ html[data-scrolled="true"] .siteHeader {
 }
 
 .heroHeadingBottom {
-  font-family: var(--font-script);
+  font-family: var(--font-sans);
   font-size: 1em;
   letter-spacing: -0.02em;
   font-weight: 800;
@@ -227,6 +227,12 @@ html[data-scrolled="true"] .siteHeader {
 .heroTagline {
   font-size: clamp(1.05rem, 0.95rem + 0.6vw, 1.35rem);
   line-height: 1.35;
+  white-space: nowrap;
+}
+
+.taglineEmphasis {
+  color: var(--accent);
+  font-weight: 800;
 }
 
 .heroTitleBlock {
@@ -417,60 +423,7 @@ dd {
   gap: 0.25rem;
 }
 
-/* Animated teal sheen for highlighted word (temporary palette until brand guide is applied) */
-.sheenWord {
-  --teal: var(--accent);
-  font-weight: 800;
-  letter-spacing: -0.01em;
-
-  /* Fallback */
-  color: var(--teal);
-  text-shadow:
-    0 0 10px color-mix(in oklab, var(--teal) 55%, transparent),
-    0 0 24px color-mix(in oklab, var(--teal) 35%, transparent);
-}
-
-@supports (-webkit-background-clip: text) or (background-clip: text) {
-  .sheenWord {
-    color: transparent;
-    background:
-      linear-gradient(
-        110deg,
-        color-mix(in oklab, var(--teal) 85%, white) 0%,
-        color-mix(in oklab, var(--teal) 55%, white) 22%,
-        white 30%,
-        color-mix(in oklab, var(--teal) 55%, white) 38%,
-        color-mix(in oklab, var(--teal) 85%, white) 60%,
-        color-mix(in oklab, var(--teal) 70%, black) 100%
-      );
-    background-size: 240% 100%;
-    background-position: 0% 50%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    animation: sheenSweep 2.8s ease-in-out infinite;
-  }
-}
-
-@keyframes sheenSweep {
-  0% {
-    background-position: 0% 50%;
-    filter: drop-shadow(0 0 10px color-mix(in oklab, var(--accent) 50%, transparent));
-  }
-  55% {
-    background-position: 100% 50%;
-    filter: drop-shadow(0 0 16px color-mix(in oklab, var(--accent) 65%, transparent));
-  }
-  100% {
-    background-position: 0% 50%;
-    filter: drop-shadow(0 0 10px color-mix(in oklab, var(--accent) 50%, transparent));
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .sheenWord {
-    animation: none !important;
-  }
-}
+/* (Sheen/gradient animation removed per brand direction) */
 
 /* Section variants */
 .band {

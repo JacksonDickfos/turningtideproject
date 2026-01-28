@@ -60,11 +60,9 @@ export default function Home() {
                 </p>
               </div>
               <p className="muted heroTagline" style={{ margin: 0 }}>
-                <span className="sheenWord">
-                  {site.tagline.prefix}
-                  {site.tagline.emphasis}
-                  {site.tagline.suffix}
-                </span>
+                {site.tagline.prefix}
+                <span className="taglineEmphasis">{site.tagline.emphasis}</span>
+                {site.tagline.suffix}
               </p>
             </div>
           </div>
