@@ -269,16 +269,16 @@ html[data-scrolled="true"] .siteHeader {
   position: absolute;
   left: -20%;
   right: -20%;
-  bottom: -6px;
-  height: 220px;
+  bottom: 0;
+  height: 140px;
   opacity: 0.95;
 
-  /* Mask: repeating filled wave shape (gentler curve) */
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='220' viewBox='0 0 900 220'%3E%3Cpath d='M0 150 C 150 110 300 190 450 150 S 750 110 900 150 V 220 H 0 Z' fill='%23000'/%3E%3C/svg%3E");
+  /* Mask: repeating filled wave shape (more wave-like, less “mountain”) */
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='220' viewBox='0 0 900 220'%3E%3Cpath d='M0 150 C 75 120 150 180 225 150 S 375 120 450 150 S 600 180 675 150 S 825 120 900 150 V 220 H 0 Z' fill='%23000'/%3E%3C/svg%3E");
   -webkit-mask-repeat: repeat-x;
   -webkit-mask-size: 900px 220px;
   -webkit-mask-position: 0 100%;
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='220' viewBox='0 0 900 220'%3E%3Cpath d='M0 150 C 150 110 300 190 450 150 S 750 110 900 150 V 220 H 0 Z' fill='%23000'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='220' viewBox='0 0 900 220'%3E%3Cpath d='M0 150 C 75 120 150 180 225 150 S 375 120 450 150 S 600 180 675 150 S 825 120 900 150 V 220 H 0 Z' fill='%23000'/%3E%3C/svg%3E");
   mask-repeat: repeat-x;
   mask-size: 900px 220px;
   mask-position: 0 100%;
@@ -294,13 +294,12 @@ html[data-scrolled="true"] .siteHeader {
       color-mix(in oklab, var(--sand) 72%, var(--white) 28%) 100%
     );
   filter: blur(0.15px);
-  animation: tideInOut 9.5s ease-in-out infinite;
+  animation: tideGrow 9.5s ease-in-out infinite;
 }
 
 /* Front “foam” edge (thin white highlight) */
 .heroWaves::after {
-  height: 200px;
-  bottom: -2px;
+  height: 105px;
   opacity: 0.75;
   background:
     linear-gradient(
@@ -310,7 +309,7 @@ html[data-scrolled="true"] .siteHeader {
       transparent 62%
     );
   filter: blur(0.6px);
-  animation: tideInOutFoam 7.5s ease-in-out infinite;
+  animation: tideGrowFoam 7.5s ease-in-out infinite;
 }
 
 @keyframes tideDrift {
@@ -322,39 +321,47 @@ html[data-scrolled="true"] .siteHeader {
   }
 }
 
-@keyframes tideInOut {
+/* Tide “comes in” (grows upward) then “goes out” (shrinks) without shifting the whole band */
+@keyframes tideGrow {
   0% {
     -webkit-mask-position: 0 100%;
     mask-position: 0 100%;
-    transform: translate3d(0, 14px, 0);
+    height: 140px;
+    opacity: 0.92;
   }
   50% {
     -webkit-mask-position: 420px 100%;
     mask-position: 420px 100%;
-    transform: translate3d(0, calc(-1 * var(--tide-rise)), 0);
+    height: calc(var(--tide-rise) + 220px);
+    opacity: 1;
   }
   100% {
     -webkit-mask-position: 900px 100%;
     mask-position: 900px 100%;
-    transform: translate3d(0, 14px, 0);
+    height: 140px;
+    opacity: 0.92;
   }
 }
 
-@keyframes tideInOutFoam {
+/* Foam “ruffles” show most at peak tide */
+@keyframes tideGrowFoam {
   0% {
     -webkit-mask-position: 0 100%;
     mask-position: 0 100%;
-    transform: translate3d(0, 8px, 0);
+    height: 95px;
+    opacity: 0.35;
   }
   50% {
     -webkit-mask-position: -360px 100%;
     mask-position: -360px 100%;
-    transform: translate3d(0, calc(-1 * (var(--tide-rise) * 0.92)), 0);
+    height: calc(var(--tide-rise) + 120px);
+    opacity: 0.85;
   }
   100% {
     -webkit-mask-position: -900px 100%;
     mask-position: -900px 100%;
-    transform: translate3d(0, 8px, 0);
+    height: 95px;
+    opacity: 0.35;
   }
 }
 
@@ -368,8 +375,7 @@ html[data-scrolled="true"] .siteHeader {
     animation: none;
   }
   .heroLogoImg {
-    transition: none;
-    transform: none;
+    animation: none !important;
   }
 }
 
@@ -382,13 +388,21 @@ html[data-scrolled="true"] .siteHeader {
 .heroLogoImg {
   height: min(504px, 76vw);
   width: auto;
-  transition: transform 420ms cubic-bezier(0.2, 0.8, 0.2, 1);
   transform-origin: 50% 55%;
   will-change: transform;
 }
 
 .heroLogoWrap:hover .heroLogoImg {
-  transform: rotate(-6deg);
+  animation: heroLogoSpin 900ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes heroLogoSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .heroGrid {
