@@ -78,31 +78,36 @@ export default function Home() {
         </Container>
       </section>
 
-      <aside className="panel floatingHeroPanel" aria-label="Quick navigation">
-        <div className="panelInner stack">
-          <h2 className="h3" style={{ margin: 0 }}>
-            What you’ll find here
-          </h2>
-          <p className="muted" style={{ margin: 0 }}>
-            Digital products now. Courses and free resources rolling out soon.
-          </p>
-          <div className="stack" style={{ gap: 10 }}>
-            <a className="metaRow metaRowLink" href="#why">
-              <span>Why Turning Tides Project</span>
-              <span className="muted">Read below</span>
-            </a>
-            <a className="metaRow metaRowLink" href="#digital-products">
-              <span>Digital products</span>
-              <span className="muted">Preview + page</span>
-            </a>
-            <a className="metaRow metaRowLink" href="#courses">
-              <span>Courses</span>
-              <span className="muted">Coming soon</span>
-            </a>
-            <a className="metaRow metaRowLink" href="#free-resources">
-              <span>Free resources</span>
-              <span className="muted">Preview + page</span>
-            </a>
+      <aside className="panel floatingHeroPanel" aria-label="Featured download">
+        <div className="panelInner floatingCard">
+          <div className="floatingCardTop">
+            <div className="floatingCardMedia" aria-hidden="true">
+              <Image
+                src="/images/braindump.png"
+                alt=""
+                width={800}
+                height={500}
+                className="floatingCardImg"
+              />
+            </div>
+
+            <div className="stack" style={{ gap: 6 }}>
+              <h2 className="h3" style={{ margin: 0 }}>
+                The Brain Dump
+              </h2>
+              <p className="muted floatingCardDesc" style={{ margin: 0 }}>
+                Brain won&apos;t switch off. Mentally overloaded? Start here.
+              </p>
+            </div>
+          </div>
+
+          <div className="floatingCardFooter">
+            <Link className="button" href="/free-resources">
+              Free Download
+            </Link>
+            <p className="muted floatingCardNote" style={{ margin: 0 }}>
+              Takes 5 minutes
+            </p>
           </div>
         </div>
       </aside>
