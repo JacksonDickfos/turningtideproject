@@ -12,22 +12,18 @@ export default function AboutPage() {
             <p className="muted" style={{ margin: 0 }}>
               About
             </p>
-            <h1 className="h1">{about.headline}</h1>
-            <p className="muted" style={{ margin: 0 }}>
-              {about.preview}
-            </p>
+            <h1 className="h1">{about.longTitle}</h1>
           </div>
 
           <div className="panel">
-            <div className="panelInner stack" style={{ gap: "1.25rem" }}>
-              {about.sections.map((s) => (
-                <section key={s.title} className="stack" style={{ gap: 8 }}>
-                  <h2 className="h2">{s.title}</h2>
-                  <p style={{ margin: 0 }}>{s.body}</p>
-                </section>
+            <div className="panelInner stack" style={{ gap: "1rem" }}>
+              {about.longParagraphs.map((p, idx) => (
+                <p key={`${idx}-${p.slice(0, 16)}`} style={{ margin: 0 }}>
+                  {p}
+                </p>
               ))}
 
-              <div className="buttonRow">
+              <div className="buttonRow" style={{ marginTop: 8 }}>
                 <Link className="button" href="/#products">
                   Browse books
                 </Link>

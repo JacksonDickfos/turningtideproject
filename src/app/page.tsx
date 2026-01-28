@@ -92,13 +92,19 @@ export default function Home() {
           <div className="grid cols2">
             <div className="panel">
               <div className="panelInner stack">
-                <h2 className="h2">{about.previewTitle}</h2>
-                <p className="muted" style={{ margin: 0 }}>
-                  {about.preview}
-                </p>
+                <h2 className="h2">{about.shortTitle}</h2>
+
+                <div className="stack" style={{ gap: 12 }}>
+                  {about.shortParagraphs.map((p, idx) => (
+                    <p key={`${idx}-${p.slice(0, 16)}`} className="muted" style={{ margin: 0 }}>
+                      {p}
+                    </p>
+                  ))}
+                </div>
+
                 <div className="buttonRow">
                   <Link className="button secondary" href="/about">
-                    Go to About
+                    Read the full story
                   </Link>
                 </div>
               </div>

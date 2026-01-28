@@ -1,23 +1,38 @@
 export const about = {
-  previewTitle: "My story",
-  preview:
-    "A short preview of your story goes here — 2–3 sentences that build trust and make it clear why you created these resources.",
-  headline: "Hi, I’m ________. Here’s how I got here.",
-  sections: [
-    {
-      title: "Where it started",
-      body:
-        "Share the origin moment: what you were doing, what you noticed, and the problem you couldn’t ignore.",
-    },
-    {
-      title: "What changed",
-      body:
-        "Describe the turning point: the approach you tested, what worked, and what you learned the hard way.",
-    },
-    {
-      title: "Why these resources",
-      body:
-        "Connect the dots: who you’re helping, what outcomes they can expect, and what you stand for.",
-    },
+  shortTitle: "About me",
+  shortParagraphs: [
+    "I wasn’t always a carer.",
+    "Caregiving isn’t something I put my hand up for. It didn’t arrive loudly or all at once. It crept in. It started small, escalated quietly, and before I knew it, my life looked very different.",
+    "Before caregiving became my reality, I was happy and living a full, busy life. Then my dad became unwell and needed care, followed by my mum, my father-in-law, and most recently, my mother-in-law. Like so many carers, I stepped up because I wanted to help and because I loved my family. Somewhere along the way, I lost a part of myself.",
+    "I found caregiving exhausting, unpredictable, and emotionally complex. I loved the people I cared for deeply, but I never planned to become a full-time carer. I felt torn between responsibility and resentment, love and guilt, all while trying to keep everything together.",
+    "Eventually, my body forced me to stop. That moment became my wake-up call.",
+    "With each care experience, I gained more insight and understanding. Over time, I began to claw my way back to myself. Hindsight has a way of sharpening what matters, and I often reflect on how different my experience might have been if I’d known then what I know now. Not because I did anything wrong, but because caring teaches you things you can only learn by living them.",
+    "The Turning Tides Project was born from this lived experience.",
+    "Hi, I’m JD Brimblecombe, founder of The Turning Tides Project, and to every carer reading this, I see you.",
+  ],
+
+  longTitle: "My story",
+  longParagraphs: [
+    "I wasn’t always a carer.",
+    "Before caregiving became my reality, I was happy and living a full, busy life. I had energy, plans, and a strong sense of who I was.",
+    "Caregiving isn’t something I put my hand up for. It didn’t arrive loudly or all at once. It crept in. It started with helping out here and there, stepping in when someone needed support. Over time, those moments grew. Responsibilities increased. Expectations changed. Before I knew it, my life looked very different to the one I had imagined.",
+    "For me, it began with my dad. Then my mum needed care. Later, my father-in-law. Most recently, my mother-in-law. Each time, I stepped up because I wanted to help and because I loved my family. It felt natural to do what needed to be done.",
+    "At the beginning, I didn’t analyse it or question whether I could cope. I simply got on with it. I was used to managing responsibility and keeping things moving. Those skills helped me function and stay afloat in the early days. But caregiving soon demanded far more than practical capability alone.",
+    "I found caregiving emotionally complicated.",
+    "I loved the people I cared for deeply. I wanted them to feel safe, supported, and dignified. But I never planned to become a long-term carer, and I didn’t expect how consuming it would be, or how much of myself I would lose sight of in the process.",
+    "When this all began, my children were toddlers. Now they are in their twenties. For years, I was juggling parenting, running a household, and the growing needs of ageing parents. Some days felt impossible. But I did what needed to be done and kept going.",
+    "With each care experience, I gained more insight and understanding. Over time, I began to claw my way back to myself. Hindsight has a way of sharpening what matters, and I often reflect on how different my experience might have been if I’d known then what I know now. Not because I did anything wrong, but because caring teaches you things you can only learn by living them.",
+    "Despite my best efforts, the toll eventually caught up with me.",
+    "My body tried to warn me. First with aches. Then sleepless nights. Then chronic pain. I ignored it until one morning I woke up and couldn’t stand. My body simply refused to carry me any further.",
+    "That moment forced me to stop and reassess.",
+    "I had to acknowledge that while I had been taking care of everyone else, I had completely forgotten about myself.",
+    "That realisation changed everything.",
+    "When I finally allowed myself to take my own needs into account, something shifted. I stopped pushing through on empty and started giving myself permission to pause. I had more space to think, more patience in difficult moments, and more emotional capacity to cope with the constant demands of caring. I wasn’t as reactive or depleted. I could listen more carefully, respond more calmly, and make decisions with a clearer head. Caring no longer felt like something that was slowly wearing me down. It became something I could show up for in a more grounded and sustainable way.",
+    "I didn’t become a worse carer. I became a better one.",
+    "I became more present, more patient, and more emotionally available. I became a better partner and a more engaged mum. Most importantly, I began to reconnect with who I was beyond caregiving.",
+    "Like everyone, I am still a work in progress. But I am happier, healthier, and more balanced than I have been in years. My life now includes me, not just the people I care for.",
+    "The Turning Tides Project was born from this lived experience.",
+    "If you see yourself in any part of this story, this space was created for you.",
+    "Hi, I’m JD Brimblecombe, founder of The Turning Tides Project, and to every carer reading this, I see you.",
   ],
 };
