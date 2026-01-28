@@ -552,22 +552,26 @@ dd {
 }
 
 /* Section-specific bubble styling */
-.coursesSection .bubble {
+.coursesSection .bubble,
+#courses .bubble {
   background: var(--olive);
   border-color: color-mix(in oklab, var(--olive) 55%, var(--white) 45%);
   color: var(--white);
 }
 
-.coursesSection .bubble .muted {
+.coursesSection .bubble .muted,
+#courses .bubble .muted {
   color: color-mix(in oklab, var(--white) 76%, var(--olive) 24%);
 }
 
-.coursesSection .bubbleMedia {
+.coursesSection .bubbleMedia,
+#courses .bubbleMedia {
   background: color-mix(in oklab, var(--olive) 82%, var(--white) 18%);
   color: color-mix(in oklab, var(--white) 78%, var(--olive) 22%);
 }
 
-.freeResourcesSection .bubble {
+.freeResourcesSection .bubble,
+#free-resources .bubble {
   background: var(--blush);
   border-color: color-mix(in oklab, var(--olive) 18%, var(--blush) 82%);
 }
