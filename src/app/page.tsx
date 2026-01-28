@@ -40,7 +40,7 @@ export default function Home() {
             <div className="stack">
               <div className="heroLogoWrap" aria-hidden="true">
                 <Image
-                  src="/images/primarylogo.png"
+                  src="/images/primarylogocopy.png"
                   alt=""
                   width={720}
                   height={320}
