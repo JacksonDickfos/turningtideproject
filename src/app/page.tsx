@@ -145,7 +145,7 @@ export default function Home() {
                 <br />
                 <strong>I am the founder of the Turning Tides Project.</strong>
                 <br />
-                <Link href="/about">
+                <Link href="/about" className="whyFounderLink">
                   <strong>Click here if you'd like to read about my story.</strong>
                 </Link>
               </p>

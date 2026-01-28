@@ -763,6 +763,11 @@ dd {
   font-size: calc(1em + 2px);
 }
 
+.whyFounderLink {
+  display: inline-block;
+  margin-top: 0.45rem;
+}
+
 .prose p {
   margin: 0;
 }
