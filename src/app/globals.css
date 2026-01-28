@@ -545,6 +545,9 @@ dd {
   background: var(--sand);
   padding: 1rem;
   display: grid;
+  /* Prevent internal grid rows from stretching when cards equalize height in the grid */
+  align-content: start;
+  grid-auto-rows: min-content;
   gap: 0.9rem;
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
