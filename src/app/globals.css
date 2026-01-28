@@ -1,30 +1,32 @@
-/*
-  Styling note:
-  - We’re intentionally using system colors + CSS variables so we don’t “pick” your brand palette yet.
-  - Once you share your style guide, we’ll replace the tokens below with your exact colors/fonts.
-*/
-
 :root {
   color-scheme: light;
 
-  /* System color keywords (neutral until branding is provided) */
-  --bg: Canvas;
-  --fg: CanvasText;
-  --accent: LinkText;
+  /* Brand palette */
+  --olive: #708238;
+  --blush: #fff0f5;
+  --black: #000000;
+  --white: #ffffff;
+  --sand: #f1e3d3;
 
-  /* Derived neutrals */
-  --border: color-mix(in oklab, CanvasText 18%, Canvas 82%);
-  --muted: color-mix(in oklab, CanvasText 60%, Canvas 40%);
-  --surface: color-mix(in oklab, Canvas 94%, CanvasText 6%);
+  /* Token mapping */
+  --bg: var(--blush);
+  --surface: var(--white);
+  --fg: var(--black);
+  --accent: var(--olive);
+  --accentSoft: var(--sand);
 
-  /* Typography (replace with brand fonts later) */
+  --border: color-mix(in oklab, var(--accent) 22%, var(--surface) 78%);
+  --muted: color-mix(in oklab, var(--fg) 58%, var(--bg) 42%);
+
+  /* Typography */
   --font-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
     Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-script: ui-serif, "Apple Chancery", "Brush Script MT", cursive;
 
   /* Layout */
   --container: 1100px;
   --radius: 16px;
-  --shadow: 0 10px 30px color-mix(in oklab, CanvasText 12%, Canvas 88%);
+  --shadow: 0 10px 30px color-mix(in oklab, var(--fg) 12%, var(--bg) 88%);
 }
 
 * {
@@ -212,6 +214,7 @@ html[data-scrolled="true"] .siteHeader {
 }
 
 .heroHeadingBottom {
+  font-family: var(--font-script);
   font-size: 1em;
   letter-spacing: -0.02em;
   font-weight: 800;
@@ -325,8 +328,8 @@ html[data-scrolled="true"] .siteHeader {
   padding: 0.75rem 1rem;
   border-radius: 999px;
   border: 1px solid var(--border);
-  background: var(--fg);
-  color: var(--bg);
+  background: var(--accent);
+  color: var(--white);
   font-weight: 600;
 }
 
@@ -337,7 +340,8 @@ html[data-scrolled="true"] .siteHeader {
 
 .button.secondary {
   background: transparent;
-  color: var(--fg);
+  color: var(--accent);
+  border-color: color-mix(in oklab, var(--accent) 38%, var(--surface) 62%);
 }
 
 .grid {
@@ -412,7 +416,7 @@ dd {
 
 /* Animated teal sheen for highlighted word (temporary palette until brand guide is applied) */
 .sheenWord {
-  --teal: #14b8a6;
+  --teal: var(--accent);
   font-weight: 800;
   letter-spacing: -0.01em;
 
@@ -447,15 +451,15 @@ dd {
 @keyframes sheenSweep {
   0% {
     background-position: 0% 50%;
-    filter: drop-shadow(0 0 10px color-mix(in oklab, #14b8a6 50%, transparent));
+    filter: drop-shadow(0 0 10px color-mix(in oklab, var(--accent) 50%, transparent));
   }
   55% {
     background-position: 100% 50%;
-    filter: drop-shadow(0 0 16px color-mix(in oklab, #14b8a6 65%, transparent));
+    filter: drop-shadow(0 0 16px color-mix(in oklab, var(--accent) 65%, transparent));
   }
   100% {
     background-position: 0% 50%;
-    filter: drop-shadow(0 0 10px color-mix(in oklab, #14b8a6 50%, transparent));
+    filter: drop-shadow(0 0 10px color-mix(in oklab, var(--accent) 50%, transparent));
   }
 }
 
