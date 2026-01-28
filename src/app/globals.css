@@ -9,7 +9,7 @@
   --sand: #f1e3d3;
 
   /* Token mapping */
-  --bg: var(--blush);
+  --bg: var(--white);
   --surface: var(--white);
   --fg: var(--black);
   --accent: var(--olive);
