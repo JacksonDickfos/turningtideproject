@@ -544,7 +544,7 @@ dd {
 .bubble {
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: var(--bg);
+  background: var(--sand);
   padding: 1rem;
   display: grid;
   gap: 0.9rem;
@@ -557,9 +557,9 @@ dd {
 }
 
 .bubbleMedia {
-  border: 1px dashed var(--border);
+  border: none;
   border-radius: calc(var(--radius) - 6px);
-  background: color-mix(in oklab, var(--surface) 92%, var(--bg) 8%);
+  background: color-mix(in oklab, var(--sand) 82%, var(--white) 18%);
   color: var(--muted);
   height: clamp(180px, 18vw, 260px);
   display: grid;
