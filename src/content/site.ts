@@ -6,6 +6,8 @@ export const site = {
     emphasis: "Carers",
     suffix: ".",
   },
+  heroDescription:
+    "The Turning Tides Project is dedicated to supporting and empowering carers by providing them with the tools, inspiration, and community they need to maintain their well-being while caring for others. We believe in the importance of reclaiming one’s life, fostering personal growth, and nurturing happiness even in the most challenging caregiving roles.",
   description:
     "A storefront for digital products (books today; courses and modules coming soon).",
   social: {

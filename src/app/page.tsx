@@ -17,6 +17,9 @@ export default function Home() {
                 {site.tagline.prefix}<span className="sheenWord">{site.tagline.emphasis}</span>{site.tagline.suffix}
               </p>
               <h1 className="h1">Build momentum with resources you can use today.</h1>
+              <p className="muted" style={{ margin: 0 }}>
+                {site.heroDescription}
+              </p>
               <p style={{ margin: 0 }}>
                 Start with the books below. Courses and guided modules are on the way.
               </p>
