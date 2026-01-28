@@ -72,7 +72,7 @@ export const freeResourcesPreview: PreviewItem[] = [
     id: "fr-2",
     title: "Aged Care Facility Checklist",
     subtitle:
-      "What to look for – and what to ask – when choosing care for someone you love",
+      "What to look for – and what to ask – when choosing care for someone you love.",
     description: "",
     longDescription:
       "This is a simple, practical checklist to help carers know what to look for - and what to ask - when visiting aged care facilities.",
@@ -82,7 +82,7 @@ export const freeResourcesPreview: PreviewItem[] = [
   {
     id: "fr-3",
     title: "Grateful Tides",
-    subtitle: "A simple gratitude journal for carers – even on the hard days",
+    subtitle: "A simple gratitude journal for carers – even on the hard days.",
     description: "",
     longDescription:
       "A carer-friendly gratitude journal designed to help you pause, reflect, and notice small moments - even when life feels heavy.",
