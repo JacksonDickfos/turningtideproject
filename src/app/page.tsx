@@ -112,7 +112,7 @@ export default function Home() {
         </div>
       </aside>
 
-      <section className="section" id="why">
+      <section className="section whySection" id="why">
         <Container>
           <div className="stack" style={{ gap: 16 }}>
             <div className="stack" style={{ gap: 6 }}>
