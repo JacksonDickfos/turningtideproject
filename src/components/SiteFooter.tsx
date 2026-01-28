@@ -11,7 +11,7 @@ export function SiteFooter() {
         <div className="siteFooterInner">
           <div className="footerLogoWrap" aria-hidden="true">
             <Image
-              src="/images/primarylogocopy.png"
+              src="/images/footerlogo.png"
               alt=""
               width={520}
               height={240}
