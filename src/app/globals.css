@@ -306,7 +306,7 @@ html[data-scrolled="true"] .siteHeader {
 }
 
 .floatingHeroPanel .floatingCardFooter .button {
-  font-size: calc(1rem * var(--floating-text-scale));
+  font-size: calc(1.15rem * var(--floating-text-scale));
 }
 
 .floatingHeroPanel .floatingCardNote {
