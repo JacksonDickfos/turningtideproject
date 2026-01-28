@@ -76,7 +76,7 @@ export const freeResourcesPreview: PreviewItem[] = [
     description: "",
     longDescription:
       "This is a simple, practical checklist to help carers know what to look for - and what to ask - when visiting aged care facilities.",
-    imageSrc: "/images/agedcarechecklist.png",
+    imageSrc: "/images/checklist.png",
     imageAlt: "Aged Care Facility Checklist",
   },
   {
@@ -86,7 +86,7 @@ export const freeResourcesPreview: PreviewItem[] = [
     description: "",
     longDescription:
       "A carer-friendly gratitude journal designed to help you pause, reflect, and notice small moments - even when life feels heavy.",
-    imageSrc: "/images/gratitude3.jpg",
+    imageSrc: "/images/journal.png",
     imageAlt: "Grateful Tides",
   },
 ];
