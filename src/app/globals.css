@@ -467,10 +467,13 @@ dd {
 .whySection .prose {
   margin-inline: auto;
   text-align: center;
+  /* Give paragraphs a bit more room so we avoid single-word “orphans” */
+  max-width: min(92ch, 100%);
 }
 
 .prose p {
   margin: 0;
+  text-wrap: pretty;
 }
 
 .prose p + p {
