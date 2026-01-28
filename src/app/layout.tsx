@@ -10,6 +10,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: site.name,
   description: site.description,
+  icons: {
+    icon: [{ url: "/images/primarylogocopy.png", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({
