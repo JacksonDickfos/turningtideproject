@@ -160,13 +160,14 @@ html[data-scrolled="true"] .siteHeader {
 
 .nav {
   display: flex;
-  gap: 0.9rem;
+  gap: 1.35rem;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .navLink {
   color: var(--muted);
+  font-weight: 700;
 }
 
 .navLink:hover {
