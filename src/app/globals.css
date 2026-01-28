@@ -224,29 +224,46 @@ html[data-scrolled="true"] .siteHeader {
   background:
     radial-gradient(
       65% 45% at 8% 28%,
-      color-mix(in oklab, var(--blush) 60%, transparent) 0%,
+      color-mix(in oklab, var(--blush) 78%, transparent) 0%,
       transparent 70%
     ),
     radial-gradient(
       70% 55% at 92% 12%,
-      color-mix(in oklab, var(--sand) 55%, transparent) 0%,
+      color-mix(in oklab, var(--sand) 72%, transparent) 0%,
       transparent 72%
     ),
     radial-gradient(
       60% 55% at 58% 92%,
-      color-mix(in oklab, var(--blush) 45%, transparent) 0%,
+      color-mix(in oklab, var(--blush) 65%, transparent) 0%,
       transparent 72%
     ),
     linear-gradient(
       180deg,
-      color-mix(in oklab, var(--white) 96%, var(--blush) 4%) 0%,
+      color-mix(in oklab, var(--white) 90%, var(--blush) 10%) 0%,
       var(--white) 65%
     );
 
-  opacity: 0.9;
-  filter: blur(18px);
+  opacity: 1;
+  filter: blur(12px);
   transform: translate3d(-2%, 0, 0);
   animation: tideDrift 18s ease-in-out infinite alternate;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+
+  /* Light olive wave strokes to make the tide effect perceptible */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='220' viewBox='0 0 900 220'%3E%3Cpath d='M0 140 C 150 100 300 180 450 140 S 750 100 900 140' fill='none' stroke='%23708238' stroke-width='6' stroke-linecap='round' stroke-opacity='0.18'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 900px 220px;
+  background-position: 0 40px;
+  opacity: 0.9;
+  filter: blur(0.3px);
+  animation: waveSweep 14s linear infinite;
 }
 
 .hero .container {
@@ -263,10 +280,22 @@ html[data-scrolled="true"] .siteHeader {
   }
 }
 
+@keyframes waveSweep {
+  0% {
+    background-position: 0 40px;
+  }
+  100% {
+    background-position: 900px 40px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hero::before {
     animation: none;
     transform: none;
+  }
+  .hero::after {
+    animation: none;
   }
 }
 
