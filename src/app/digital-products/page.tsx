@@ -10,7 +10,7 @@ export default function DigitalProductsPage() {
       <Container>
         <div className="stack" style={{ gap: "1.5rem" }}>
           <div className="stack" style={{ gap: 10 }}>
-            <h1 className="h1">Explore digital products</h1>
+            <h1 className="h1">Digital Products</h1>
             <p className="muted" style={{ margin: 0 }}>
               Instantly downloadable tools to make caring feel less overwhelming.
             </p>
