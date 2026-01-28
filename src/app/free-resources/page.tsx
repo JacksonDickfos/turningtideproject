@@ -6,7 +6,7 @@ import { freeResourcesPreview } from "@/content/previews";
 
 export default function FreeResourcesPage() {
   return (
-    <section className="section">
+    <section className="section freeResourcesSection">
       <Container>
         <div className="stack" style={{ gap: "1.5rem" }}>
           <div className="stack" style={{ gap: 10 }}>

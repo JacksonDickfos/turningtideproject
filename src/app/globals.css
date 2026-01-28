@@ -551,6 +551,27 @@ dd {
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
+/* Section-specific bubble styling */
+.coursesSection .bubble {
+  background: var(--olive);
+  border-color: color-mix(in oklab, var(--olive) 55%, var(--white) 45%);
+  color: var(--white);
+}
+
+.coursesSection .bubble .muted {
+  color: color-mix(in oklab, var(--white) 76%, var(--olive) 24%);
+}
+
+.coursesSection .bubbleMedia {
+  background: color-mix(in oklab, var(--olive) 82%, var(--white) 18%);
+  color: color-mix(in oklab, var(--white) 78%, var(--olive) 22%);
+}
+
+.freeResourcesSection .bubble {
+  background: var(--blush);
+  border-color: color-mix(in oklab, var(--olive) 18%, var(--blush) 82%);
+}
+
 .bubble:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow);

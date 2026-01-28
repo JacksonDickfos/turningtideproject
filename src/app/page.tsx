@@ -144,7 +144,7 @@ export default function Home() {
               <div className="stack" style={{ gap: 6 }}>
                 <h2 className="h2">Digital Products</h2>
                 <p className="muted" style={{ margin: 0 }}>
-                  A quick preview of the paid resources you can access.
+                  Instantly downloadable tools to make caring feel less overwhelming.
                 </p>
               </div>
               <Link className="button secondary" href="/digital-products">
@@ -157,7 +157,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="section band" id="courses">
+      <section className="section band coursesSection" id="courses">
         <Container>
           <div className="stack" style={{ gap: 16 }}>
             <div className="sectionHeader">
@@ -177,7 +177,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="section" id="free-resources">
+      <section className="section freeResourcesSection" id="free-resources">
         <Container>
           <div className="stack" style={{ gap: 16 }}>
             <div className="sectionHeader">

@@ -5,7 +5,7 @@ import { coursesPreview } from "@/content/previews";
 
 export default function CoursesPage() {
   return (
-    <section className="section">
+    <section className="section coursesSection">
       <Container>
         <div className="stack" style={{ gap: "1.5rem" }}>
           <div className="stack" style={{ gap: 10 }}>
