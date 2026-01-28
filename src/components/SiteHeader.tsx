@@ -13,15 +13,18 @@ export function SiteHeader() {
           </Link>
 
           <nav className="nav">
-            <Link href="/about" className="navLink">
-              About
+            <Link href="/#why" className="navLink">
+              Why
             </Link>
-            <a href="#products" className="navLink">
-              Books
-            </a>
-            <a href="#courses" className="navLink">
-              Courses (Soon)
-            </a>
+            <Link href="/#digital-products" className="navLink">
+              Digital Products
+            </Link>
+            <Link href="/#courses" className="navLink">
+              Courses
+            </Link>
+            <Link href="/#free-resources" className="navLink">
+              Free Resources
+            </Link>
           </nav>
         </div>
       </Container>

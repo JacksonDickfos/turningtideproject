@@ -357,3 +357,51 @@ dd {
 .listRow:first-child {
   border-top: none;
 }
+
+/* Section header row (title + action) */
+.sectionHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Bubble previews */
+.bubbleGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .bubbleGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.bubble {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  padding: 1rem;
+  display: grid;
+  gap: 0.9rem;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.bubble:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.bubbleMedia {
+  border: 1px dashed var(--border);
+  border-radius: calc(var(--radius) - 6px);
+  background: color-mix(in oklab, var(--surface) 75%, var(--bg) 25%);
+  color: var(--muted);
+  height: 120px;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+}
