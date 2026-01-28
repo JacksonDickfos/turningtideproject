@@ -288,6 +288,8 @@ html[data-scrolled="true"] .siteHeader {
   bottom: 24px;
   width: min(420px, calc(100vw - 48px));
   z-index: 50;
+  transform: scale(0.75);
+  transform-origin: bottom right;
 }
 
 .floatingCard {
@@ -350,6 +352,7 @@ html[data-scrolled="true"] .siteHeader {
     position: static;
     width: auto;
     margin: 0 auto 1.25rem;
+    transform: none;
   }
 }
 
