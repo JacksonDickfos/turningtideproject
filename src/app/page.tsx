@@ -164,7 +164,7 @@ export default function Home() {
               <div className="stack" style={{ gap: 6 }}>
                 <h2 className="h2">Mini Courses</h2>
                 <p className="muted" style={{ margin: 0 }}>
-                  Coming soon.
+                  Short, supportive courses to help you care without burning out or losing yourself. No fluff. Built for real life.
                 </p>
               </div>
               <Link className="button secondary" href="/courses">
@@ -184,7 +184,7 @@ export default function Home() {
               <div className="stack" style={{ gap: 6 }}>
                 <h2 className="h2">Free Resources</h2>
                 <p className="muted" style={{ margin: 0 }}>
-                  Helpful tools you can use right away (more coming soon).
+                  Small tools that can make a big difference. Instant download. Use straight away.
                 </p>
               </div>
               <Link className="button secondary" href="/free-resources">
