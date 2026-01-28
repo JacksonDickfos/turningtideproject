@@ -159,7 +159,7 @@ html[data-scrolled="true"] .siteHeader {
 
 .nav {
   display: flex;
-  gap: 1.35rem;
+  gap: 1.9rem;
   flex-wrap: wrap;
   justify-content: center;
 }
