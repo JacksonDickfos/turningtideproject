@@ -559,9 +559,9 @@ dd {
 .bubbleMedia {
   border: 1px dashed var(--border);
   border-radius: calc(var(--radius) - 6px);
-  background: color-mix(in oklab, var(--surface) 75%, var(--bg) 25%);
+  background: color-mix(in oklab, var(--surface) 92%, var(--bg) 8%);
   color: var(--muted);
-  height: 120px;
+  height: clamp(180px, 18vw, 260px);
   display: grid;
   place-items: center;
   font-size: 14px;

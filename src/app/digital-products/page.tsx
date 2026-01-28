@@ -29,7 +29,7 @@ export default function DigitalProductsPage() {
                       alt={item.imageAlt ?? ""}
                       width={800}
                       height={500}
-                      style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                      style={{ width: "100%", height: "100%", objectFit: "contain" }}
                     />
                   ) : (
                     "Visual coming soon"

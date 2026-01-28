@@ -10,7 +10,8 @@ export const digitalProductsPreview: PreviewItem[] = [
   {
     id: "dp-1",
     title: "The Care Companion",
-    description: "Visual + copy coming soon.",
+    description:
+      "Your Ultimate Caregiving Organiser. An essential all-in-one guide to comprehensive care",
     imageSrc: "/images/carecompanion6.png",
     imageAlt: "The Care Companion",
   },
