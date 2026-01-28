@@ -329,7 +329,7 @@ html[data-scrolled="true"] .siteHeader {
   border-radius: calc(var(--radius) - 6px);
   overflow: hidden;
   border: 1px solid var(--border);
-  background: var(--blush);
+  background: var(--white);
 }
 
 .floatingCardImg {
