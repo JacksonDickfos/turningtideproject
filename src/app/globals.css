@@ -169,23 +169,23 @@ html[data-scrolled="true"] .siteHeader {
   justify-content: center;
   padding: 0.55rem 0.9rem;
   border-radius: 999px;
-  background: var(--sand);
-  color: var(--olive);
+  background: var(--olive);
+  color: var(--white);
   font-weight: 700;
-  border: 1px solid color-mix(in oklab, var(--olive) 22%, var(--sand) 78%);
+  border: 1px solid color-mix(in oklab, var(--olive) 80%, black 20%);
   transition: filter 160ms ease, background-color 160ms ease,
     border-color 160ms ease;
 }
 
 .navLink:hover {
   text-decoration: none;
-  filter: brightness(0.98);
-  background: color-mix(in oklab, var(--sand) 85%, var(--white) 15%);
-  border-color: color-mix(in oklab, var(--olive) 32%, var(--sand) 68%);
+  filter: brightness(1.02);
+  background: color-mix(in oklab, var(--olive) 88%, black 12%);
+  border-color: color-mix(in oklab, var(--olive) 70%, black 30%);
 }
 
 .navLink:focus-visible {
-  outline: 3px solid color-mix(in oklab, var(--olive) 55%, var(--white) 45%);
+  outline: 3px solid color-mix(in oklab, var(--sand) 70%, var(--white) 30%);
   outline-offset: 3px;
 }
 
