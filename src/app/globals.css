@@ -274,11 +274,11 @@ html[data-scrolled="true"] .siteHeader {
   opacity: 0.95;
 
   /* Mask: repeating filled wave shape (more wave-like, less “mountain”) */
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='220' viewBox='0 0 900 220'%3E%3Cpath d='M0 150 C 35 150 78 120 108 106 C 112 104 145 120 170 150 C 195 180 205 185 225 185 C 260 185 285 165 300 150 C 335 150 378 120 408 106 C 412 104 445 120 470 150 C 495 180 505 185 525 185 C 560 185 585 165 600 150 C 635 150 678 120 708 106 C 712 104 745 120 770 150 C 795 180 805 185 825 185 C 860 185 885 165 900 150 V 220 H 0 Z' fill='%23000'/%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='220' viewBox='0 0 900 220'%3E%3Cpath d='M0 150 C 70 150 115 126 140 102 C 150 94 172 122 185 150 C 200 178 215 190 240 190 C 270 190 292 170 300 150 C 370 150 415 126 440 102 C 450 94 472 122 485 150 C 500 178 515 190 540 190 C 570 190 592 170 600 150 C 670 150 715 126 740 102 C 750 94 772 122 785 150 C 800 178 815 190 840 190 C 870 190 892 170 900 150 V 220 H 0 Z' fill='%23000'/%3E%3C/svg%3E");
   -webkit-mask-repeat: repeat-x;
   -webkit-mask-size: 900px 220px;
   -webkit-mask-position: 0 100%;
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='220' viewBox='0 0 900 220'%3E%3Cpath d='M0 150 C 35 150 78 120 108 106 C 112 104 145 120 170 150 C 195 180 205 185 225 185 C 260 185 285 165 300 150 C 335 150 378 120 408 106 C 412 104 445 120 470 150 C 495 180 505 185 525 185 C 560 185 585 165 600 150 C 635 150 678 120 708 106 C 712 104 745 120 770 150 C 795 180 805 185 825 185 C 860 185 885 165 900 150 V 220 H 0 Z' fill='%23000'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='220' viewBox='0 0 900 220'%3E%3Cpath d='M0 150 C 70 150 115 126 140 102 C 150 94 172 122 185 150 C 200 178 215 190 240 190 C 270 190 292 170 300 150 C 370 150 415 126 440 102 C 450 94 472 122 485 150 C 500 178 515 190 540 190 C 570 190 592 170 600 150 C 670 150 715 126 740 102 C 750 94 772 122 785 150 C 800 178 815 190 840 190 C 870 190 892 170 900 150 V 220 H 0 Z' fill='%23000'/%3E%3C/svg%3E");
   mask-repeat: repeat-x;
   mask-size: 900px 220px;
   mask-position: 0 100%;
