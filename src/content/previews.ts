@@ -2,13 +2,17 @@ export type PreviewItem = {
   id: string;
   title: string;
   description: string;
+  imageSrc?: string;
+  imageAlt?: string;
 };
 
 export const digitalProductsPreview: PreviewItem[] = [
   {
     id: "dp-1",
-    title: "Digital Product 1",
+    title: "The Care Companion",
     description: "Visual + copy coming soon.",
+    imageSrc: "/images/carecompanion6.png",
+    imageAlt: "The Care Companion",
   },
   {
     id: "dp-2",

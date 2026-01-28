@@ -12,13 +12,31 @@ import { site } from "@/content/site";
 function BubbleGrid({
   items,
 }: {
-  items: { id: string; title: string; description: string }[];
+  items: {
+    id: string;
+    title: string;
+    description: string;
+    imageSrc?: string;
+    imageAlt?: string;
+  }[];
 }) {
   return (
     <div className="bubbleGrid">
       {items.map((item) => (
         <div key={item.id} className="bubble">
-          <div className="bubbleMedia">Visual coming soon</div>
+          <div className="bubbleMedia" style={{ overflow: "hidden" }}>
+            {item.imageSrc ? (
+              <Image
+                src={item.imageSrc}
+                alt={item.imageAlt ?? ""}
+                width={800}
+                height={500}
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
+            ) : (
+              "Visual coming soon"
+            )}
+          </div>
           <div className="stack" style={{ gap: 6 }}>
             <h3 className="h3">{item.title}</h3>
             <p className="muted" style={{ margin: 0 }}>

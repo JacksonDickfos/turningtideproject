@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import { Container } from "@/components/Container";
 import { digitalProductsPreview } from "@/content/previews";
@@ -21,7 +22,19 @@ export default function DigitalProductsPage() {
           <div className="bubbleGrid">
             {digitalProductsPreview.map((item) => (
               <div key={item.id} className="bubble">
-                <div className="bubbleMedia">Visual coming soon</div>
+                <div className="bubbleMedia" style={{ overflow: "hidden" }}>
+                  {item.imageSrc ? (
+                    <Image
+                      src={item.imageSrc}
+                      alt={item.imageAlt ?? ""}
+                      width={800}
+                      height={500}
+                      style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                    />
+                  ) : (
+                    "Visual coming soon"
+                  )}
+                </div>
                 <div className="stack" style={{ gap: 6 }}>
                   <h2 className="h3">{item.title}</h2>
                   <p className="muted" style={{ margin: 0 }}>
