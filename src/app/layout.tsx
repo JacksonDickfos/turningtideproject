@@ -37,6 +37,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${openSans.variable} ${pacifico.variable}`}>
+      <head>
+        <Script
+          id="mcjs"
+          strategy="beforeInteractive"
+          src="https://chimpstatic.com/mcjs-connected/js/users/b14a1e11083ebe95a91d23b07/2bcef125e88b01332dbb1dc15.js"
+        />
+      </head>
       <body>
         <ScrollHeaderState />
         <div className="page">
@@ -44,9 +51,6 @@ export default function RootLayout({
           <main>{children}</main>
           <SiteFooter />
         </div>
-        <Script id="mcjs" strategy="afterInteractive">
-          {`!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/b14a1e11083ebe95a91d23b07/2bcef125e88b01332dbb1dc15.js");`}
-        </Script>
       </body>
     </html>
   );
