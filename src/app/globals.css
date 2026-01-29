@@ -465,6 +465,28 @@ html[data-scrolled="true"] .siteHeader {
   font-weight: 800;
 }
 
+@media (max-width: 600px) {
+  .hero {
+    padding: 3rem 0 2.25rem;
+  }
+
+  /* Prevent overflow that makes the hero look off-center on small screens */
+  .heroTagline {
+    white-space: normal;
+    text-wrap: balance;
+    font-size: 1.05rem;
+  }
+
+  .heroHeadingBottom {
+    text-wrap: balance;
+    overflow-wrap: anywhere;
+  }
+
+  .heroLogoImg {
+    max-width: 100%;
+  }
+}
+
 .heroTitleBlock {
   display: grid;
   gap: 0.5rem;
@@ -913,10 +935,12 @@ dd {
 }
 
 .bubbleImage {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
   display: block;
+  transform: none;
+  transform-origin: center;
 }
 
 /* Free resources card 1 (The Brain Dump): white media background + slightly smaller image */
@@ -925,8 +949,7 @@ dd {
 }
 
 .bubble--fr-1 .bubbleImage {
-  width: 86%;
-  height: 86%;
+  transform: scale(0.86);
 }
 
 /* Free resources cards 2 + 3: white media background + 25% smaller image */
@@ -937,8 +960,7 @@ dd {
 
 .bubble--fr-2 .bubbleImage,
 .bubble--fr-3 .bubbleImage {
-  width: 75%;
-  height: 75%;
+  transform: scale(0.75);
 }
 
 .bubbleText {
