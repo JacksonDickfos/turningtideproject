@@ -749,6 +749,8 @@ dd {
 
 .whySection .prose p {
   white-space: pre-line;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.1rem);
+  line-height: 1.45;
 }
 
 .whySection .prose a {
@@ -764,11 +766,12 @@ dd {
 
 .whyFounder {
   font-size: calc(1em + 2px);
+  line-height: 1.25;
 }
 
 .whyFounderLink {
   display: inline-block;
-  margin-top: 0.45rem;
+  margin-top: 0.25rem;
 }
 
 .prose p {
@@ -776,7 +779,7 @@ dd {
 }
 
 .prose p + p {
-  margin-top: 0.9rem;
+  margin-top: 1.1rem;
 }
 
 /* Full-width list styling (used for Courses section) */
