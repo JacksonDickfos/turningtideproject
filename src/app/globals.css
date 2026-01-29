@@ -30,6 +30,9 @@
   --radius-button: 10px;
   --scroll-offset: 50px;
   --shadow: 0 10px 30px color-mix(in oklab, var(--fg) 12%, var(--bg) 88%);
+
+  /* Type sizing */
+  --section-subtitle-size: 1rem; /* 16px */
 }
 
 * {
@@ -749,7 +752,7 @@ dd {
 
 .whySection .prose p {
   white-space: pre-line;
-  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.1rem);
+  font-size: var(--section-subtitle-size);
   line-height: 1.45;
 }
 
@@ -765,7 +768,7 @@ dd {
 }
 
 .whyFounder {
-  font-size: calc(1em + 2px);
+  font-size: 1.25rem; /* ~20px */
   line-height: 1.25;
 }
 
@@ -809,6 +812,12 @@ dd {
   justify-content: space-between;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+/* Section subtitle (the muted line under section headings like “Digital Products”) */
+.sectionHeader .muted {
+  font-size: var(--section-subtitle-size);
+  line-height: 1.45;
 }
 
 /* Bubble previews */
