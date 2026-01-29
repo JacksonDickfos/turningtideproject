@@ -9,9 +9,9 @@ export const site = {
   heroSubheading: "“Turning Tides, Changing Lives”",
 
   tagline: {
-    prefix: "Helping ",
+    prefix: "Empowering ",
     emphasis: "Carers",
-    suffix: " reclaim and prioritise themselves - without guilt or burnout",
+    suffix: " to reclaim & prioritise themselves – without guilt or burnout.",
   },
 
   heroDescription:

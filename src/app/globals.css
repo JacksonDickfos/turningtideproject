@@ -128,6 +128,7 @@ section[id] {
 .heroSubheading {
   font-size: clamp(1.05rem, 0.95rem + 0.5vw, 1.25rem);
   font-weight: 700;
+  color: var(--black);
 }
 
 .siteHeader {
@@ -386,7 +387,7 @@ html[data-scrolled="true"] .siteHeader {
 }
 
 .heroLogoImg {
-  height: min(504px, 76vw);
+  height: min(428px, 65vw);
   width: auto;
   transform-origin: 50% 55%;
   will-change: transform;

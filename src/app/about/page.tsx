@@ -31,9 +31,14 @@ export default function AboutPage() {
               ))}
 
               <div className="buttonRow" style={{ marginTop: 8 }}>
-                <Link className="button" href="/#products">
-                  Browse books
-                </Link>
+                <a
+                  className="button"
+                  href="https://instagram.com/turningtidesproject"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Instagram
+                </a>
                 <Link className="button secondary" href="/">
                   Back home
                 </Link>
