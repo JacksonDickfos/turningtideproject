@@ -24,8 +24,8 @@ export default function CoursesPage() {
                     <Image
                       src={item.imageSrc}
                       alt={item.imageAlt ?? ""}
-                      width={800}
-                      height={500}
+                      fill
+                      sizes="(max-width: 900px) 100vw, 33vw"
                       className="bubbleImage"
                     />
                   ) : (

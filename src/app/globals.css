@@ -910,6 +910,13 @@ dd {
   position: relative;
 }
 
+@media (max-width: 600px) {
+  /* Give illustrations enough vertical room so they don't feel “cropped” on mobile */
+  .bubbleMedia {
+    height: clamp(240px, 62vw, 360px);
+  }
+}
+
 /* "Coming soon" ribbon overlays */
 .bubble--c-1 .bubbleMedia::after,
 .bubble--c-2 .bubbleMedia::after,
