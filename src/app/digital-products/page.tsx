@@ -18,7 +18,11 @@ export default function DigitalProductsPage() {
 
           <div className="bubbleGrid">
             {digitalProductsPreview.map((item) => (
-              <div key={item.id} className={`bubble bubble--${item.id}`}>
+              <Link
+                key={item.id}
+                href={item.href}
+                className={`bubble bubble--${item.id} bubbleLink`}
+              >
                 <div className="bubbleMedia" style={{ overflow: "hidden" }}>
                   {item.imageSrc ? (
                     <Image
@@ -43,7 +47,7 @@ export default function DigitalProductsPage() {
                     <p className="muted bubbleDesc">{item.description}</p>
                   ) : null}
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
 

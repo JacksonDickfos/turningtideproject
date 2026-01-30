@@ -14,6 +14,7 @@ function BubbleGrid({
 }: {
   items: {
     id: string;
+    href: string;
     title: string;
     subtitle?: string;
     description: string;
@@ -25,7 +26,11 @@ function BubbleGrid({
   return (
     <div className="bubbleGrid">
       {items.map((item) => (
-        <div key={item.id} className={`bubble bubble--${item.id}`}>
+        <Link
+          key={item.id}
+          href={item.href}
+          className={`bubble bubble--${item.id} bubbleLink`}
+        >
           <div className="bubbleMedia" style={{ overflow: "hidden" }}>
             {item.imageSrc ? (
               <Image
@@ -50,7 +55,7 @@ function BubbleGrid({
               <p className="muted bubbleDesc">{item.description}</p>
             ) : null}
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );

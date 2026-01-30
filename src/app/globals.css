@@ -878,6 +878,15 @@ dd {
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
+.bubbleLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.bubbleLink:hover {
+  text-decoration: none;
+}
+
 /* Section-specific bubble styling */
 .coursesSection .bubble,
 #courses .bubble {
@@ -919,6 +928,76 @@ dd {
   font-size: 14px;
   position: relative;
 }
+
+/* Detail pages (distinct layouts per category) */
+.detailLayout {
+  gap: 1.25rem;
+}
+
+.detailHeader {
+  text-align: center;
+  justify-items: center;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.detailGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .detailGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.detailGallery {
+  display: grid;
+  gap: 1rem;
+}
+
+.detailImage {
+  position: relative;
+  height: min(420px, 70vw);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--white);
+  overflow: hidden;
+}
+
+.courseVideo {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--sand) 70%, var(--white) 30%);
+  overflow: hidden;
+}
+
+.courseVideoInner {
+  aspect-ratio: 16 / 9;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 0.85rem;
+  border-radius: var(--radius-button);
+  border: 1px solid var(--border);
+  background: var(--white);
+  color: var(--fg);
+  font: inherit;
+}
+
+.input:focus-visible {
+  outline: 3px solid color-mix(in oklab, var(--sand) 70%, var(--white) 30%);
+  outline-offset: 2px;
+}
+
 
 @media (max-width: 600px) {
   /* Give illustrations enough vertical room so they don't feel “cropped” on mobile */

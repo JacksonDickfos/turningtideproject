@@ -18,7 +18,11 @@ export default function CoursesPage() {
 
           <div className="bubbleGrid">
             {coursesPreview.map((item) => (
-              <div key={item.id} className={`bubble bubble--${item.id}`}>
+              <Link
+                key={item.id}
+                href={item.href}
+                className={`bubble bubble--${item.id} bubbleLink`}
+              >
                 <div className="bubbleMedia" style={{ overflow: "hidden" }}>
                   {item.imageSrc ? (
                     <Image
@@ -41,7 +45,7 @@ export default function CoursesPage() {
                   </div>
                   <p className="muted bubbleDesc">{item.description}</p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
 
