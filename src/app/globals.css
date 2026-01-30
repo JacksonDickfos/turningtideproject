@@ -959,6 +959,59 @@ dd {
   gap: 1rem;
 }
 
+.detailContent {
+  gap: 1.4rem;
+  padding-top: 0.25rem;
+}
+
+.bullets {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.faqSection {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.faqList {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.faqItem {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--white);
+  padding: 0.9rem 1rem;
+}
+
+.faqItem summary {
+  cursor: pointer;
+  font-weight: 800;
+  list-style: none;
+}
+
+.faqItem summary::-webkit-details-marker {
+  display: none;
+}
+
+.faqItem summary::after {
+  content: "+";
+  float: right;
+  color: var(--muted);
+}
+
+.faqItem[open] summary::after {
+  content: "–";
+}
+
+.faqItem p {
+  padding-top: 0.65rem;
+}
+
 .detailImage {
   position: relative;
   height: min(420px, 70vw);

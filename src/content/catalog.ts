@@ -18,6 +18,7 @@ export type DigitalProductItem = BaseCatalogItem & {
   type: "digital_product";
   /** Stripe checkout URL (to be provided) */
   stripeUrl?: string;
+  priceLabel?: string;
   /** Image gallery for the product page */
   gallery?: { src: string; alt?: string }[];
 };
@@ -47,6 +48,7 @@ export const digitalProducts: DigitalProductItem[] = [
     imageAlt: "The Care Companion",
     status: "available",
     stripeUrl: "https://buy.stripe.com/fZucMYb6u6yk0Ao9OH6oo00",
+    priceLabel: "$49.95 AUD",
     gallery: [{ src: "/images/carecompanion6.png", alt: "The Care Companion" }],
   },
   {
