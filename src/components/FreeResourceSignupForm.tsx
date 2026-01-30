@@ -2,7 +2,13 @@
 
 import { useState } from "react";
 
-export function FreeResourceSignupForm({ slug }: { slug: string }) {
+export function FreeResourceSignupForm({
+  slug,
+  ctaLabel,
+}: {
+  slug: string;
+  ctaLabel?: string;
+}) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">(
@@ -57,7 +63,7 @@ export function FreeResourceSignupForm({ slug }: { slug: string }) {
         </label>
 
         <button className="button" type="submit" disabled={status === "submitting"}>
-          {status === "submitting" ? "Sending…" : "Send me the PDF"}
+          {status === "submitting" ? "Sending…" : ctaLabel ?? "Send me the PDF"}
         </button>
 
         {message ? (

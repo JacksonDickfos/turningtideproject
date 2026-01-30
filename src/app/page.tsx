@@ -124,7 +124,7 @@ export default function Home() {
           </div>
 
           <div className="floatingCardFooter">
-            <Link className="button" href="/free-resources">
+            <Link className="button" href="/free-resources/the-brain-dump">
               Free PDF Download
             </Link>
             <p className="muted floatingCardNote" style={{ margin: 0 }}>

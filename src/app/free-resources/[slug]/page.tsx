@@ -85,7 +85,14 @@ export default async function FreeResourceDetailPage({
                     <p className="muted" style={{ margin: 0 }}>
                       Enter your details and we’ll email you the PDF.
                     </p>
-                    <FreeResourceSignupForm slug={resource.slug} />
+                    <FreeResourceSignupForm
+                      slug={resource.slug}
+                      ctaLabel={
+                        resource.slug === "the-brain-dump"
+                          ? "Download The Brain Dump"
+                          : undefined
+                      }
+                    />
                   </>
                 )}
               </div>
