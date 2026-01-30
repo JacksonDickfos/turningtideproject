@@ -45,8 +45,8 @@ export const digitalProducts: DigitalProductItem[] = [
       "Your Ultimate Caregiving Organiser. An essential all-in-one guide to comprehensive care.",
     imageSrc: "/images/carecompanion6.png",
     imageAlt: "The Care Companion",
-    status: "coming_soon",
-    stripeUrl: "", // TODO: add Stripe link
+    status: "available",
+    stripeUrl: "https://buy.stripe.com/fZucMYb6u6yk0Ao9OH6oo00",
     gallery: [{ src: "/images/carecompanion6.png", alt: "The Care Companion" }],
   },
   {

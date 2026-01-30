@@ -77,9 +77,16 @@ export default async function DigitalProductDetailPage({
                     Coming soon
                   </button>
                 ) : (
-                  <a className="button" href={product.stripeUrl}>
-                    Buy now
-                  </a>
+                  <>
+                    {product.slug === "the-care-companion" ? (
+                      <p style={{ margin: 0, fontWeight: 800, fontSize: 18 }}>
+                        $49.95
+                      </p>
+                    ) : null}
+                    <a className="button" href={product.stripeUrl}>
+                      Buy now
+                    </a>
+                  </>
                 )}
               </div>
             </aside>
