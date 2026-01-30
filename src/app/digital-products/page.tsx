@@ -32,11 +32,16 @@ export default function DigitalProductsPage() {
                     "Visual coming soon"
                   )}
                 </div>
-                <div className="stack" style={{ gap: 6 }}>
-                  <h2 className="h3">{item.title}</h2>
-                  <p className="muted" style={{ margin: 0 }}>
-                    {item.description}
-                  </p>
+                <div className="bubbleText">
+                  <div className="bubbleTitleGroup">
+                    <h2 className="h3">{item.title}</h2>
+                    {item.subtitle ? (
+                      <p className="muted bubbleSubtitle">{item.subtitle}</p>
+                    ) : null}
+                  </div>
+                  {item.description?.trim() ? (
+                    <p className="muted bubbleDesc">{item.description}</p>
+                  ) : null}
                 </div>
               </div>
             ))}

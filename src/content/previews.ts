@@ -19,8 +19,11 @@ export const digitalProductsPreview: PreviewItem[] = [
   },
   {
     id: "dp-2",
-    title: "Digital Product 2",
-    description: "Visual + copy coming soon.",
+    title: "Residential Aged Care Inspection Guide",
+    subtitle: "What to look for, what to ask, and how to choose with confidence.",
+    description: "",
+    imageSrc: "/images/inspectionguide.png",
+    imageAlt: "Residential Aged Care Inspection Guide",
   },
   {
     id: "dp-3",
@@ -70,17 +73,6 @@ export const freeResourcesPreview: PreviewItem[] = [
   },
   {
     id: "fr-2",
-    title: "Aged Care Facility Checklist",
-    subtitle:
-      "What to look for – and what to ask – when choosing care for someone you love.",
-    description: "",
-    longDescription:
-      "This is a simple, practical checklist to help carers know what to look for - and what to ask - when visiting aged care facilities.",
-    imageSrc: "/images/checklist.png",
-    imageAlt: "Aged Care Facility Checklist",
-  },
-  {
-    id: "fr-3",
     title: "Grateful Tides",
     subtitle: "A simple gratitude journal for carers – even on the hard days.",
     description: "",
@@ -88,5 +80,11 @@ export const freeResourcesPreview: PreviewItem[] = [
       "A carer-friendly gratitude journal designed to help you pause, reflect, and notice small moments - even when life feels heavy.",
     imageSrc: "/images/journal.png",
     imageAlt: "Grateful Tides",
+  },
+  {
+    id: "fr-3",
+    title: "Free Resource 3",
+    subtitle: "Coming soon.",
+    description: "",
   },
 ];

@@ -381,6 +381,9 @@ html[data-scrolled="true"] .siteHeader {
   .heroLogoImg {
     animation: none !important;
   }
+  .footerLogoImg {
+    animation: none !important;
+  }
 }
 
 .heroLogoWrap {
@@ -560,6 +563,7 @@ html[data-scrolled="true"] .siteHeader {
 .floatingCardDesc {
   display: -webkit-box;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -724,6 +728,12 @@ dd {
   width: min(270px, 52.5vw);
   height: auto;
   display: block;
+  transform-origin: 50% 55%;
+  will-change: transform;
+}
+
+.footerLogoWrap:hover .footerLogoImg {
+  animation: heroLogoSlowSpin 10s linear infinite;
 }
 
 /* About page */
@@ -923,7 +933,8 @@ dd {
 .bubble--c-3 .bubbleMedia::after,
 .bubble--dp-1 .bubbleMedia::after,
 .bubble--dp-2 .bubbleMedia::after,
-.bubble--dp-3 .bubbleMedia::after {
+.bubble--dp-3 .bubbleMedia::after,
+.bubble--fr-3 .bubbleMedia::after {
   content: "Coming soon";
   position: absolute;
   top: 14px;
