@@ -8,12 +8,13 @@ export function generateStaticParams() {
   return courses.map((c) => ({ slug: c.slug }));
 }
 
-export default function CourseDetailPage({
+export default async function CourseDetailPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }> | { slug: string };
 }) {
-  const course = getCourse(params.slug);
+  const slug = "then" in params ? (await params).slug : params.slug;
+  const course = getCourse(slug);
   if (!course) return notFound();
 
   return (

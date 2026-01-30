@@ -9,12 +9,13 @@ export function generateStaticParams() {
   return digitalProducts.map((p) => ({ slug: p.slug }));
 }
 
-export default function DigitalProductDetailPage({
+export default async function DigitalProductDetailPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }> | { slug: string };
 }) {
-  const product = getDigitalProduct(params.slug);
+  const slug = "then" in params ? (await params).slug : params.slug;
+  const product = getDigitalProduct(slug);
   if (!product) return notFound();
 
   return (

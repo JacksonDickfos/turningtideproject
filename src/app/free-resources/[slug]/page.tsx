@@ -10,12 +10,13 @@ export function generateStaticParams() {
   return freeResources.map((r) => ({ slug: r.slug }));
 }
 
-export default function FreeResourceDetailPage({
+export default async function FreeResourceDetailPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }> | { slug: string };
 }) {
-  const resource = getFreeResource(params.slug);
+  const slug = "then" in params ? (await params).slug : params.slug;
+  const resource = getFreeResource(slug);
   if (!resource) return notFound();
 
   return (
