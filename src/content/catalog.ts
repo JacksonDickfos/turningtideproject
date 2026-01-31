@@ -55,11 +55,11 @@ export const digitalProducts: DigitalProductItem[] = [
     type: "digital_product",
     id: "dp-2",
     slug: "residential-aged-care-inspection-guide",
-    title: "Residential Aged Care Inspection Guide",
+    title: "Aged Care Inspection Guide",
     subtitle: "What to look for, what to ask, and how to choose with confidence.",
     description: "",
     imageSrc: "/images/inspectionguide.png",
-    imageAlt: "Residential Aged Care Inspection Guide",
+    imageAlt: "Aged Care Inspection Guide",
     status: "coming_soon",
     stripeUrl: "", // TODO: add Stripe link
     gallery: [{ src: "/images/inspectionguide.png", alt: "Inspection guide" }],

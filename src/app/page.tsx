@@ -100,39 +100,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <aside className="panel floatingHeroPanel" aria-label="Featured download">
-        <div className="panelInner floatingCard">
-          <div className="floatingCardTop">
-            <div className="floatingCardMedia" aria-hidden="true">
-              <Image
-                src="/images/braindump.png"
-                alt=""
-                width={800}
-                height={500}
-                className="floatingCardImg"
-              />
-            </div>
-
-            <div className="stack" style={{ gap: 6 }}>
-              <h2 className="h3" style={{ margin: 0 }}>
-                The Brain Dump
-              </h2>
-              <p className="muted floatingCardDesc" style={{ margin: 0 }}>
-                Mentally overloaded? Start here.
-              </p>
-            </div>
-          </div>
-
-          <div className="floatingCardFooter">
-            <Link className="button" href="/free-resources/the-brain-dump">
-              Free PDF Download
-            </Link>
-            <p className="muted floatingCardNote" style={{ margin: 0 }}>
-              Instant Access
-            </p>
-          </div>
-        </div>
-      </aside>
+      {/* Floating card temporarily hidden (will be re-enabled later). */}
 
       <section className="section whySection" id="why">
         <Container>

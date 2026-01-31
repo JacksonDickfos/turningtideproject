@@ -133,7 +133,7 @@ export default async function DigitalProductDetailPage({
                   <section className="stack" style={{ gap: 10 }}>
                     <h2 className="h2">Who it’s for</h2>
                     <ul className="bullets">
-                      <li>Are managing medical appointments, medications, and information for someone else</li>
+                      <li>This is for carers who are managing medical appointments, medications, and information for someone else</li>
                       <li>Feel like they’re constantly holding everything together</li>
                       <li>Worry about forgetting something important</li>
                       <li>Are tired of explaining the same details over and over</li>
