@@ -269,7 +269,21 @@ export default async function DigitalProductDetailPage({
 
             <aside className="panel">
               <div className="panelInner stack">
-                {product.description ? <p style={{ margin: 0 }}>{product.description}</p> : null}
+                {product.sidebarTitle ? (
+                  <h2 className="h3" style={{ margin: 0 }}>
+                    {product.sidebarTitle}
+                  </h2>
+                ) : null}
+                {product.sidebarSubtitle ? (
+                  <p className="muted" style={{ margin: 0 }}>
+                    {product.sidebarSubtitle}
+                  </p>
+                ) : null}
+                {product.sidebarNote ? (
+                  <p style={{ margin: 0 }}>{product.sidebarNote}</p>
+                ) : product.description ? (
+                  <p style={{ margin: 0 }}>{product.description}</p>
+                ) : null}
                 {product.longDescription ? (
                   <p className="muted" style={{ margin: 0 }}>
                     {product.longDescription}

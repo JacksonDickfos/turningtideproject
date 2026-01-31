@@ -19,6 +19,9 @@ export type DigitalProductItem = BaseCatalogItem & {
   /** Stripe checkout URL (to be provided) */
   stripeUrl?: string;
   priceLabel?: string;
+  sidebarTitle?: string;
+  sidebarSubtitle?: string;
+  sidebarNote?: string;
   /** Image gallery for the product page */
   gallery?: { src: string; alt?: string }[];
 };
@@ -49,6 +52,10 @@ export const digitalProducts: DigitalProductItem[] = [
     status: "available",
     stripeUrl: "https://buy.stripe.com/fZucMYb6u6yk0Ao9OH6oo00",
     priceLabel: "$49.95 AUD",
+    sidebarTitle: "The Care Companion — Your Ultimate Caregiving Organiser.",
+    sidebarSubtitle:
+      "An all-in-one digital tool to keep important information, appointments, and care details in one place.",
+    sidebarNote: "Created to reduce overwhelm and help caring feel more manageable.",
     gallery: [{ src: "/images/carecompanion6.png", alt: "The Care Companion" }],
   },
   {
