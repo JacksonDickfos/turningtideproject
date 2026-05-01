@@ -172,10 +172,14 @@ export const freeResources: FreeResourceItem[] = [
     type: "free_resource",
     id: "fr-3",
     slug: "free-resource-3",
-    title: "Free Resource 3",
-    subtitle: "Coming soon.",
+    title: "When It's Time",
+    subtitle: "Navigating the move into care for someone you love.",
     description: "",
-    status: "coming_soon",
+    imageSrc: "/images/whenitstime.png",
+    imageAlt: "When It's Time",
+    status: "available",
+    pdfUrl: "", // TODO: set actual PDF URL
+    gallery: [{ src: "/images/whenitstime.png", alt: "When It's Time" }],
   },
 ];
 
