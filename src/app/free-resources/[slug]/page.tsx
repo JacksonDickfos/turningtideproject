@@ -82,16 +82,16 @@ export default async function FreeResourceDetailPage({
                   </>
                 ) : (
                   <>
+                    <h2 className="h3" style={{ margin: 0 }}>
+                      {resource.signupHeading}
+                    </h2>
                     <p className="muted" style={{ margin: 0 }}>
-                      Enter your details and we’ll email you the PDF.
+                      {resource.signupShortDescription}
                     </p>
                     <FreeResourceSignupForm
                       slug={resource.slug}
-                      ctaLabel={
-                        resource.slug === "the-brain-dump"
-                          ? "Download The Brain Dump"
-                          : undefined
-                      }
+                      ctaLabel={resource.signupCtaLabel}
+                      disclosureNote={resource.signupDisclosureNote}
                     />
                   </>
                 )}

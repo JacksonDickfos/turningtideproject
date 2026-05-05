@@ -5,9 +5,15 @@ import { useState } from "react";
 export function FreeResourceSignupForm({
   slug,
   ctaLabel,
+  disclosureNote,
+  firstNameLabel = "First Name",
+  emailLabel = "Email Address",
 }: {
   slug: string;
-  ctaLabel?: string;
+  ctaLabel: string;
+  disclosureNote: string;
+  firstNameLabel?: string;
+  emailLabel?: string;
 }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -41,17 +47,18 @@ export function FreeResourceSignupForm({
     <form className="freeForm" onSubmit={onSubmit}>
       <div className="stack" style={{ gap: 10 }}>
         <label className="stack" style={{ gap: 6 }}>
-          <span className="muted">Name</span>
+          <span className="muted">{firstNameLabel}</span>
           <input
             className="input"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
-            autoComplete="name"
+            autoComplete="given-name"
+            name="firstName"
           />
         </label>
         <label className="stack" style={{ gap: 6 }}>
-          <span className="muted">Email</span>
+          <span className="muted">{emailLabel}</span>
           <input
             className="input"
             type="email"
@@ -59,12 +66,17 @@ export function FreeResourceSignupForm({
             onChange={(e) => setEmail(e.target.value)}
             required
             autoComplete="email"
+            name="email"
           />
         </label>
 
         <button className="button" type="submit" disabled={status === "submitting"}>
-          {status === "submitting" ? "Sending…" : ctaLabel ?? "Send me the PDF"}
+          {status === "submitting" ? "Sending…" : ctaLabel}
         </button>
+
+        <p className="muted freeFormDisclosure" style={{ margin: 0 }}>
+          {disclosureNote}
+        </p>
 
         {message ? (
           <p className="muted" style={{ margin: 0 }}>

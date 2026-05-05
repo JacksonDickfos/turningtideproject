@@ -37,6 +37,11 @@ export type FreeResourceItem = BaseCatalogItem & {
   /** Where the PDF will be delivered from (email flow is implemented separately) */
   pdfUrl?: string;
   gallery?: { src: string; alt?: string }[];
+  /** Download panel (hero copy above the signup form) */
+  signupHeading: string;
+  signupShortDescription: string;
+  signupCtaLabel: string;
+  signupDisclosureNote: string;
 };
 
 export const digitalProducts: DigitalProductItem[] = [
@@ -152,6 +157,12 @@ export const freeResources: FreeResourceItem[] = [
     status: "available",
     pdfUrl: "", // TODO: set actual PDF URL
     gallery: [{ src: "/images/whenitstime.png", alt: "When It's Time" }],
+    signupHeading: "Support for a big, emotional decision",
+    signupShortDescription:
+      "A practical, compassionate guide to help you navigate the move into care — whether the decision is yours, shared with family, or being made by someone you love.",
+    signupCtaLabel: "Download now",
+    signupDisclosureNote:
+      "By downloading, you'll also receive helpful emails from The Turning Tides Project. You can unsubscribe anytime.",
   },
   {
     type: "free_resource",
@@ -165,6 +176,12 @@ export const freeResources: FreeResourceItem[] = [
     status: "available",
     pdfUrl: "", // TODO: set actual PDF URL
     gallery: [{ src: "/images/braindump.png", alt: "The Brain Dump" }],
+    signupHeading: "Clear your head in minutes",
+    signupShortDescription:
+      "A simple way to get everything out of your head and onto paper — no organising, no fixing, just space to breathe.",
+    signupCtaLabel: "Download now",
+    signupDisclosureNote:
+      "By downloading, you'll also receive helpful emails from The Turning Tides Project. You can unsubscribe anytime.",
   },
   {
     type: "free_resource",
@@ -180,6 +197,12 @@ export const freeResources: FreeResourceItem[] = [
     status: "available",
     pdfUrl: "", // TODO: set actual PDF URL
     gallery: [{ src: "/images/journal.png", alt: "Grateful Tides" }],
+    signupHeading: "A gentle moment of gratitude",
+    signupShortDescription:
+      "A simple gratitude journal designed to help you pause, reflect, and notice small moments of calm - even on hard days.",
+    signupCtaLabel: "Download now",
+    signupDisclosureNote:
+      "By downloading, you'll also receive helpful emails from The Turning Tides Project. You can unsubscribe anytime.",
   },
 ];
 

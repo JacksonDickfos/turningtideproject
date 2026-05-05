@@ -1051,6 +1051,10 @@ dd {
   outline-offset: 2px;
 }
 
+.freeFormDisclosure {
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
 
 @media (max-width: 600px) {
   /* Give illustrations enough vertical room so they don't feel “cropped” on mobile */
