@@ -1063,10 +1063,7 @@ dd {
 .bubble--c-1 .bubbleMedia::after,
 .bubble--c-2 .bubbleMedia::after,
 .bubble--c-3 .bubbleMedia::after,
-.bubble--dp-1 .bubbleMedia::after,
-.bubble--dp-2 .bubbleMedia::after,
-.bubble--dp-3 .bubbleMedia::after,
-.bubble--fr-3 .bubbleMedia::after {
+.bubble--dp-3 .bubbleMedia::after {
   content: "Coming soon";
   position: absolute;
   top: 14px;
