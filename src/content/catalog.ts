@@ -142,6 +142,19 @@ export const courses: CourseItem[] = [
 export const freeResources: FreeResourceItem[] = [
   {
     type: "free_resource",
+    id: "fr-3",
+    slug: "free-resource-3",
+    title: "When It's Time",
+    subtitle: "Navigating the move into care for someone you love.",
+    description: "",
+    imageSrc: "/images/whenitstime.png",
+    imageAlt: "When It's Time",
+    status: "available",
+    pdfUrl: "", // TODO: set actual PDF URL
+    gallery: [{ src: "/images/whenitstime.png", alt: "When It's Time" }],
+  },
+  {
+    type: "free_resource",
     id: "fr-1",
     slug: "the-brain-dump",
     title: "The Brain Dump",
@@ -167,19 +180,6 @@ export const freeResources: FreeResourceItem[] = [
     status: "available",
     pdfUrl: "", // TODO: set actual PDF URL
     gallery: [{ src: "/images/journal.png", alt: "Grateful Tides" }],
-  },
-  {
-    type: "free_resource",
-    id: "fr-3",
-    slug: "free-resource-3",
-    title: "When It's Time",
-    subtitle: "Navigating the move into care for someone you love.",
-    description: "",
-    imageSrc: "/images/whenitstime.png",
-    imageAlt: "When It's Time",
-    status: "available",
-    pdfUrl: "", // TODO: set actual PDF URL
-    gallery: [{ src: "/images/whenitstime.png", alt: "When It's Time" }],
   },
 ];
 
