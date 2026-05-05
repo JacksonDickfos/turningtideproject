@@ -127,6 +127,26 @@ export default function Home() {
         </Container>
       </section>
 
+      <section className="section" id="free-resources">
+        <Container>
+          <div className="stack" style={{ gap: 16 }}>
+            <div className="sectionHeader">
+              <div className="stack" style={{ gap: 6 }}>
+                <h2 className="h2">Free Resources</h2>
+                <p className="muted" style={{ margin: 0 }}>
+                  Small tools that can make a big difference. Instant download. Use straight away.
+                </p>
+              </div>
+              <Link className="button secondary" href="/free-resources">
+                View all
+              </Link>
+            </div>
+
+            <BubbleGrid items={freeResourcesPreview} />
+          </div>
+        </Container>
+      </section>
+
       <section className="section" id="digital-products">
         <Container>
           <div className="stack" style={{ gap: 16 }}>
@@ -163,26 +183,6 @@ export default function Home() {
             </div>
 
             <BubbleGrid items={coursesPreview} />
-          </div>
-        </Container>
-      </section>
-
-      <section className="section" id="free-resources">
-        <Container>
-          <div className="stack" style={{ gap: 16 }}>
-            <div className="sectionHeader">
-              <div className="stack" style={{ gap: 6 }}>
-                <h2 className="h2">Free Resources</h2>
-                <p className="muted" style={{ margin: 0 }}>
-                  Small tools that can make a big difference. Instant download. Use straight away.
-                </p>
-              </div>
-              <Link className="button secondary" href="/free-resources">
-                View all
-              </Link>
-            </div>
-
-            <BubbleGrid items={freeResourcesPreview} />
           </div>
         </Container>
       </section>

@@ -9,14 +9,14 @@ export function SiteHeader() {
       <Container>
         <div className="siteHeaderInner">
           <nav className="nav">
+            <Link href="/#free-resources" className="navLink">
+              Free Resources
+            </Link>
             <Link href="/#digital-products" className="navLink">
               Digital Products
             </Link>
             <Link href="/#courses" className="navLink">
               Mini Courses
-            </Link>
-            <Link href="/#free-resources" className="navLink">
-              Free Resources
             </Link>
           </nav>
         </div>
