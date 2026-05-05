@@ -190,8 +190,6 @@ export const freeResources: FreeResourceItem[] = [
     title: "Grateful Tides",
     subtitle: "A simple gratitude journal for carers – even on the hard days.",
     description: "",
-    longDescription:
-      "A carer-friendly gratitude journal designed to help you pause, reflect, and notice small moments - even when life feels heavy.",
     imageSrc: "/images/journal.png",
     imageAlt: "Grateful Tides",
     status: "available",
