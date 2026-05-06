@@ -1,8 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { Container } from "@/components/Container";
+import { FreeResourceGallery } from "@/components/FreeResourceGallery";
 import { FreeResourceSignupForm } from "@/components/FreeResourceSignupForm";
 import { freeResources, getFreeResource } from "@/content/catalog";
 
@@ -18,6 +18,13 @@ export default async function FreeResourceDetailPage({
   const slug = "then" in params ? (await params).slug : params.slug;
   const resource = getFreeResource(slug);
   if (!resource) return notFound();
+
+  const galleryImages =
+    resource.gallery?.length
+      ? resource.gallery.map((g) => ({ src: g.src, alt: g.alt ?? "" }))
+      : resource.imageSrc
+        ? [{ src: resource.imageSrc, alt: resource.imageAlt ?? "" }]
+        : [];
 
   return (
     <section className="section">
@@ -40,28 +47,7 @@ export default async function FreeResourceDetailPage({
 
           <div className="detailGrid">
             <div className="detailGallery">
-              {(resource.gallery?.length ? resource.gallery : []).map((img) => (
-                <div key={img.src} className="detailImage">
-                  <Image
-                    src={img.src}
-                    alt={img.alt ?? ""}
-                    fill
-                    sizes="(max-width: 900px) 100vw, 700px"
-                    style={{ objectFit: "contain" }}
-                  />
-                </div>
-              ))}
-              {!resource.gallery?.length && resource.imageSrc ? (
-                <div className="detailImage">
-                  <Image
-                    src={resource.imageSrc}
-                    alt={resource.imageAlt ?? ""}
-                    fill
-                    sizes="(max-width: 900px) 100vw, 700px"
-                    style={{ objectFit: "contain" }}
-                  />
-                </div>
-              ) : null}
+              <FreeResourceGallery images={galleryImages} />
               {resource.longDescription ? (
                 <p className="muted" style={{ margin: 0 }}>
                   {resource.longDescription}
