@@ -152,30 +152,11 @@ export const freeResources: FreeResourceItem[] = [
     title: "When It's Time",
     subtitle: "Navigating the move into care for someone you love.",
     description: "",
-    imageSrc: "/images/WIT 1 Front Cover.jpg",
-    imageAlt: "When It's Time — front cover",
+    imageSrc: "/images/whenitstime.png",
+    imageAlt: "When It's Time",
     status: "available",
     pdfUrl: "", // TODO: set actual PDF URL
-    gallery: [
-      { src: "/images/WIT 1 Front Cover.jpg", alt: "Front cover" },
-      {
-        src: "/images/WIT 2 When your head feels full.jpg",
-        alt: "When your head feels full",
-      },
-      { src: "/images/WIT 3 What it helps with.jpg", alt: "What it helps with" },
-      { src: "/images/WIT 4 What this is.jpg", alt: "What this is" },
-      { src: "/images/WIT 5 Why carers use it.jpg", alt: "Why carers use it" },
-      { src: "/images/WIT 6 How to use it.jpg", alt: "How to use it" },
-      {
-        src: "/images/WIT 7 What you_ll walk away with.jpg",
-        alt: "What you'll walk away with",
-      },
-      {
-        src: "/images/WIT 8 Instant Download - Digital PDF.jpg",
-        alt: "Instant download — digital PDF",
-      },
-      { src: "/images/WIT 9 The Brain Dump.jpg", alt: "Final page: The Brain Dump" },
-    ],
+    gallery: [{ src: "/images/whenitstime.png", alt: "When It's Time" }],
     signupHeading: "Support for a big, emotional decision",
     signupShortDescription:
       "A practical, compassionate guide to help you navigate the move into care — whether the decision is yours, shared with family, or being made by someone you love.",
@@ -194,7 +175,26 @@ export const freeResources: FreeResourceItem[] = [
     imageAlt: "The Brain Dump",
     status: "available",
     pdfUrl: "", // TODO: set actual PDF URL
-    gallery: [{ src: "/images/braindump.png", alt: "The Brain Dump" }],
+    gallery: [
+      { src: "/images/BD 1 Front Cover.jpg", alt: "Front cover" },
+      {
+        src: "/images/BD 2 When your head feels full.jpg",
+        alt: "When something is changing",
+      },
+      { src: "/images/BD 3 What it helps with.jpg", alt: "What it helps with" },
+      { src: "/images/BD 4 What this is.jpg", alt: "What this is" },
+      { src: "/images/BD 5 Why carers use it.jpg", alt: "Why carers use it" },
+      { src: "/images/BD 6 How to use it.jpg", alt: "How to use it" },
+      {
+        src: "/images/BD 7 What you_ll walk away with.jpg",
+        alt: "What you'll walk away with",
+      },
+      {
+        src: "/images/BD 8 Instant Download - Digital PDF.jpg",
+        alt: "Instant download — digital PDF",
+      },
+      { src: "/images/BD 9 The Brain Dump.jpg", alt: "When it's time" },
+    ],
     signupHeading: "Clear your head in minutes",
     signupShortDescription:
       "A simple way to get everything out of your head and onto paper — no organising, no fixing, just space to breathe.",
