@@ -152,8 +152,8 @@ export const freeResources: FreeResourceItem[] = [
     title: "When It's Time",
     subtitle: "Navigating the move into care for someone you love.",
     description: "",
-    imageSrc: "/images/WIT 1 Front Cover.jpg",
-    imageAlt: "When It's Time — front cover",
+    imageSrc: "/images/whenitstime.png",
+    imageAlt: "When It's Time",
     status: "available",
     pdfUrl: "", // TODO: set actual PDF URL
     gallery: [
