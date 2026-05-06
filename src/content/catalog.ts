@@ -232,7 +232,29 @@ export const freeResources: FreeResourceItem[] = [
     imageAlt: "Grateful Tides",
     status: "available",
     pdfUrl: "", // TODO: set actual PDF URL
-    gallery: [{ src: "/images/journal.png", alt: "Grateful Tides" }],
+    gallery: [
+      {
+        src: "/images/GT 1 Front Cover - Grateful Tides.jpg",
+        alt: "Front cover — Grateful Tides",
+      },
+      {
+        src: "/images/GT 2 When caring takes over.jpg",
+        alt: "When caring takes over",
+      },
+      { src: "/images/GT 3 What it helps with.jpg", alt: "What it helps with" },
+      { src: "/images/GT 4 What this is.jpg", alt: "What this is" },
+      { src: "/images/GT 5 Why carers use it.jpg", alt: "Why carers use it" },
+      { src: "/images/GT 6 How to use it.jpg", alt: "How to use it" },
+      {
+        src: "/images/GT 7 What you_ll walk away with.jpg",
+        alt: "What you'll walk away with",
+      },
+      {
+        src: "/images/GT 8 Instant Download - Digital PDF.jpg",
+        alt: "Instant download — digital PDF",
+      },
+      { src: "/images/GT 9 The Brain Dump.jpg", alt: "The Brain Dump" },
+    ],
     signupHeading: "A gentle moment of gratitude",
     signupShortDescription:
       "A simple gratitude journal designed to help you pause, reflect, and notice small moments of calm - even on hard days.",
