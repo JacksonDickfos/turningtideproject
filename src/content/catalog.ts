@@ -152,11 +152,30 @@ export const freeResources: FreeResourceItem[] = [
     title: "When It's Time",
     subtitle: "Navigating the move into care for someone you love.",
     description: "",
-    imageSrc: "/images/whenitstime.png",
-    imageAlt: "When It's Time",
+    imageSrc: "/images/WIT 1 Front Cover.jpg",
+    imageAlt: "When It's Time — front cover",
     status: "available",
     pdfUrl: "", // TODO: set actual PDF URL
-    gallery: [{ src: "/images/whenitstime.png", alt: "When It's Time" }],
+    gallery: [
+      { src: "/images/WIT 1 Front Cover.jpg", alt: "Front cover" },
+      {
+        src: "/images/WIT 2 When something is changing.jpg",
+        alt: "When something is changing",
+      },
+      { src: "/images/WIT 3 What it helps with.jpg", alt: "What it helps with" },
+      { src: "/images/WIT 4 What this is.jpg", alt: "What this is" },
+      { src: "/images/WIT 5 Why carers use it.jpg", alt: "Why carers use it" },
+      { src: "/images/WIT 6 How to use it.jpg", alt: "How to use it" },
+      {
+        src: "/images/WIT 7 What you_ll walk away with.jpg",
+        alt: "What you'll walk away with",
+      },
+      {
+        src: "/images/WIT 8 Instant Download - Digital PDF.jpg",
+        alt: "Instant download — digital PDF",
+      },
+      { src: "/images/WIT 9 When Its Time.jpg", alt: "When it's time" },
+    ],
     signupHeading: "Support for a big, emotional decision",
     signupShortDescription:
       "A practical, compassionate guide to help you navigate the move into care — whether the decision is yours, shared with family, or being made by someone you love.",
