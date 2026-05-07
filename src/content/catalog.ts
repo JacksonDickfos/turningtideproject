@@ -102,6 +102,7 @@ export const digitalProducts: DigitalProductItem[] = [
     imageAlt: "The C.A.R.E. Framework",
     status: "coming_soon",
     stripeUrl: "", // TODO: add Stripe link
+    priceLabel: "$49.95 AUD",
     gallery: [
       {
         src: "/images/The C.A.R.E. Framework - Website hero Image.jpg",

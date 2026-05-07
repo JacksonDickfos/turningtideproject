@@ -119,6 +119,183 @@ export default async function DigitalProductDetailPage({
 
               {isCareFramework ? (
                 <div className="stack detailContent">
+                  <section className="stack" style={{ gap: 10 }}>
+                    <h2 className="h2">
+                      A structured decision framework
+                      <br />
+                      for families choosing residential aged care
+                    </h2>
+                    <p className="muted" style={{ margin: 0 }}>
+                      Choosing residential aged care can feel overwhelming.
+                    </p>
+                    <p className="muted" style={{ margin: 0 }}>
+                      You are suddenly faced with websites, brochures, and conversations that all seem
+                      to say similar things.
+                    </p>
+                    <p style={{ margin: 0, fontWeight: 700 }}>
+                      Every place presents itself well.
+                      <br />
+                      Every place makes reassuring promises.
+                    </p>
+                    <p className="muted" style={{ margin: 0 }}>
+                      At the same time, advice starts coming from everywhere.
+                      <br />
+                      Someone’s friend had a good experience here.
+                      <br />
+                      Someone else warns you about somewhere else.
+                    </p>
+                    <p className="muted" style={{ margin: 0 }}>
+                      But how do you know what truly matters for your loved one?
+                      <br />
+                      And how do you compare one home to another with confidence?
+                    </p>
+                    <p style={{ margin: 0 }}>
+                      The C.A.R.E. Framework is a practical, independent guide designed to help you
+                      assess aged care homes with clarity and structure.
+                    </p>
+                    <p className="muted" style={{ margin: 0 }}>
+                      This is not a generic checklist.
+                      <br />
+                      It is a clear decision-making framework built from lived caregiving experience.
+                    </p>
+                  </section>
+
+                  <section className="stack" style={{ gap: 10 }}>
+                    <h2 className="h2">What The C.A.R.E. Framework helps you do</h2>
+                    <ul className="bullets">
+                      <li>Focus on what truly matters instead of being distracted by presentation</li>
+                      <li>Define your loved ones’ needs clearly before stepping into any facility</li>
+                      <li>Understand how clinical care, staffing, and daily oversight really work</li>
+                      <li>Clarify room options, fees, and account processes upfront</li>
+                      <li>Compare homes using the same structure every time</li>
+                      <li>Make an educated decision with clarity</li>
+                    </ul>
+                    <p className="muted" style={{ margin: 0 }}>
+                      It’s built for real-world visits, not ideal conditions.
+                    </p>
+                  </section>
+
+                  <section className="stack" style={{ gap: 10 }}>
+                    <h2 className="h2">Who it’s for</h2>
+                    <p style={{ margin: 0 }}>
+                      The C.A.R.E. Framework is for anyone navigating aged care.
+                    </p>
+                    <p className="muted" style={{ margin: 0 }}>
+                      It supports:
+                    </p>
+                    <ul className="bullets">
+                      <li>Individuals exploring residential care for themselves</li>
+                      <li>Spouses or partners facing changing health needs</li>
+                      <li>Adult children supporting a parent or parents</li>
+                      <li>Families working through the decision collaboratively</li>
+                      <li>Carers who feel the weight of this decision largely on their own</li>
+                    </ul>
+                    <p className="muted" style={{ margin: 0 }}>
+                      If you want a clear, structured way to approach this decision, this framework is
+                      designed for you.
+                    </p>
+                  </section>
+
+                  <section className="stack" style={{ gap: 10 }}>
+                    <h2 className="h2">Why this isn’t just another checklist</h2>
+                    <p style={{ margin: 0 }}>There is no shortage of information about aged care.</p>
+                    <p className="muted" style={{ margin: 0 }}>
+                      What’s often missing is a clear process for making the decision.
+                    </p>
+                    <p style={{ margin: 0 }}>
+                      The C.A.R.E. Framework was created from direct experience navigating and evaluating
+                      residential aged care options for family members.
+                    </p>
+                    <p className="muted" style={{ margin: 0 }}>
+                      It is completely independent and not aligned with any aged care provider, broker, or
+                      government body.
+                    </p>
+                    <p className="muted" style={{ margin: 0 }}>
+                      There are no incentives influencing its guidance.
+                    </p>
+                    <p className="muted" style={{ margin: 0 }}>It exists for one reason only:</p>
+                    <p style={{ margin: 0, fontWeight: 700 }}>
+                      To help you choose the best possible option available at the time for your loved one.
+                    </p>
+                  </section>
+
+                  <section className="stack" style={{ gap: 10 }}>
+                    <h2 className="h2">What’s inside</h2>
+                    <ul className="bullets">
+                      <li>Pre-your research guidance to narrow options early</li>
+                      <li>The What Matters Most | Pre-Tour worksheet to define needs and priorities</li>
+                      <li>A detailed On-Site Tour | C.A.R.E. Checklist to take with you</li>
+                      <li>Post-Tour Reflection Sheet to compare facilities</li>
+                      <li>A professional follow-up email template for any additional questions post-tour</li>
+                    </ul>
+                    <p style={{ margin: 0 }}>
+                      Detailed, experience-based guidance from someone who has walked this path.
+                    </p>
+                    <p className="muted" style={{ margin: 0 }}>
+                      Everything is laid out clearly, using simple language and practical prompts.
+                    </p>
+                  </section>
+
+                  <section className="stack" style={{ gap: 10 }}>
+                    <h2 className="h2">What this gives you</h2>
+                    <p style={{ margin: 0, fontWeight: 800, letterSpacing: "0.04em", fontSize: 15 }}>
+                      IT DOESN’T MAKE THE DECISION EASY.
+                      <br />
+                      IT MAKES IT CLEARER.
+                    </p>
+                    <ul className="bullets">
+                      <li>More clarity during tours.</li>
+                      <li>More confidence in the questions you ask.</li>
+                      <li>Less second-guessing afterwards.</li>
+                      <li>Greater clarity when comparing options.</li>
+                      <li>Peace of mind knowing you approached it carefully.</li>
+                    </ul>
+                  </section>
+
+                  <section className="stack" style={{ gap: 10 }}>
+                    <h2 className="h2">Format</h2>
+                    <ul className="bullets">
+                      <li>Instant digital download.</li>
+                      <li>Printable and reusable PDF.</li>
+                      <li>Use it on a desktop, laptop, or tablet.</li>
+                      <li>Print the sections you need for tours and reflections.</li>
+                    </ul>
+                    <p className="muted" style={{ margin: 0 }}>
+                      No subscription.
+                      <br />
+                      No ongoing commitment.
+                    </p>
+                    <p className="muted" style={{ margin: 0 }}>
+                      Download once. Use as needed.
+                    </p>
+                  </section>
+
+                  <section className="panel">
+                    <div className="panelInner stack" style={{ gap: 10 }}>
+                      <h2 className="h2">Price</h2>
+                      <p style={{ margin: 0, fontWeight: 800, fontSize: 18 }}>
+                        AUD $49.95
+                        <br />
+                        <span style={{ fontWeight: 600, fontSize: 16 }}>One-off purchase.</span>
+                      </p>
+                      <p className="muted" style={{ margin: 0 }}>
+                        Residential aged care is a significant financial and emotional commitment.
+                      </p>
+                      <p className="muted" style={{ margin: 0 }}>
+                        Approaching that decision with structure and clarity matters.
+                      </p>
+                      {product.status === "coming_soon" || !product.stripeUrl ? (
+                        <button className="button" type="button" disabled>
+                          Coming soon
+                        </button>
+                      ) : (
+                        <a className="button" href={product.stripeUrl}>
+                          Download The C.A.R.E. Framework
+                        </a>
+                      )}
+                    </div>
+                  </section>
+
                   <section className="faqSection">
                     <h2 className="h2">Frequently Asked Questions</h2>
                     <div className="faqList">
