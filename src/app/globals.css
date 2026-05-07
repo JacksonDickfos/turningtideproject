@@ -763,6 +763,22 @@ dd {
   gap: 0.4rem;
 }
 
+.quizEmbedWrap {
+  width: 100%;
+  max-width: 56rem;
+  margin-inline: auto;
+}
+
+.quizEmbedFrame {
+  display: block;
+  width: 100%;
+  height: min(85vh, 720px);
+  min-height: 600px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+
 .footerLogoWrap {
   display: grid;
   place-items: center;
