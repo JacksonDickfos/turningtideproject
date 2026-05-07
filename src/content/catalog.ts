@@ -61,7 +61,33 @@ export const digitalProducts: DigitalProductItem[] = [
     sidebarSubtitle:
       "An all-in-one digital tool to keep important information, appointments, and care details in one place.",
     sidebarNote: "Created to reduce overwhelm and help caring feel more manageable.",
-    gallery: [{ src: "/images/carecompanion6.png", alt: "The Care Companion" }],
+    gallery: [
+      { src: "/images/CC 1 The Care Companion.png", alt: "The Care Companion" },
+      {
+        src: "/images/CC 2 What The Care Companion helps you do.png",
+        alt: "What The Care Companion helps you do",
+      },
+      { src: "/images/CC 3 Who it_s for.png", alt: "Who it's for" },
+      {
+        src: "/images/CC 4 Why this isn_t just another organiser.png",
+        alt: "Why this isn't just another organiser",
+      },
+      { src: "/images/CC 5 What_s inside.png", alt: "What's inside" },
+      {
+        src: "/images/CC 6 How carers use The Care Companion.png",
+        alt: "How carers use The Care Companion",
+      },
+      {
+        src: "/images/CC 7 What carers tell us they gain.png",
+        alt: "What carers tell us they gain",
+      },
+      { src: "/images/CC 8 Format.png", alt: "Format" },
+      { src: "/images/CC 9 Personal Use & Printing.png", alt: "Personal use and printing" },
+      {
+        src: "/images/CC 10 Your all-in-one guide to comprehensive care.png",
+        alt: "Your all-in-one guide to comprehensive care",
+      },
+    ],
   },
   {
     type: "digital_product",

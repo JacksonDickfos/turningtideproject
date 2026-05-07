@@ -1,8 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { Container } from "@/components/Container";
+import { FreeResourceGallery } from "@/components/FreeResourceGallery";
 import { getDigitalProduct, digitalProducts } from "@/content/catalog";
 
 export function generateStaticParams() {
@@ -51,6 +51,13 @@ export default async function DigitalProductDetailPage({
 
   const isCareCompanion = product.slug === "the-care-companion";
 
+  const galleryImages =
+    product.gallery?.length
+      ? product.gallery.map((g) => ({ src: g.src, alt: g.alt ?? "" }))
+      : product.imageSrc
+        ? [{ src: product.imageSrc, alt: product.imageAlt ?? "" }]
+        : [];
+
   return (
     <section className="section">
       <Container>
@@ -72,28 +79,7 @@ export default async function DigitalProductDetailPage({
 
           <div className="detailGrid">
             <div className="detailGallery">
-              {(product.gallery?.length ? product.gallery : []).map((img) => (
-                <div key={img.src} className="detailImage">
-                  <Image
-                    src={img.src}
-                    alt={img.alt ?? ""}
-                    fill
-                    sizes="(max-width: 900px) 100vw, 700px"
-                    style={{ objectFit: "contain" }}
-                  />
-                </div>
-              ))}
-              {!product.gallery?.length && product.imageSrc ? (
-                <div className="detailImage">
-                  <Image
-                    src={product.imageSrc}
-                    alt={product.imageAlt ?? ""}
-                    fill
-                    sizes="(max-width: 900px) 100vw, 700px"
-                    style={{ objectFit: "contain" }}
-                  />
-                </div>
-              ) : null}
+              {galleryImages.length ? <FreeResourceGallery images={galleryImages} /> : null}
 
               {isCareCompanion ? (
                 <div className="stack detailContent">
