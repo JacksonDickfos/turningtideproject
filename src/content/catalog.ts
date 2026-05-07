@@ -94,14 +94,20 @@ export const digitalProducts: DigitalProductItem[] = [
     type: "digital_product",
     id: "dp-2",
     slug: "residential-aged-care-inspection-guide",
-    title: "Aged Care Inspection Guide",
-    subtitle: "What to look for, what to ask, and how to choose with confidence.",
+    title: "The C.A.R.E. Framework",
+    subtitle:
+      "A practical guide to visiting and choosing residential aged care for a loved one. What to look for, what to ask, and how to choose with confidence.",
     description: "",
-    imageSrc: "/images/inspectionguide.png",
-    imageAlt: "Aged Care Inspection Guide",
+    imageSrc: "/images/The C.A.R.E. Framework - Website hero Image.jpg",
+    imageAlt: "The C.A.R.E. Framework",
     status: "coming_soon",
     stripeUrl: "", // TODO: add Stripe link
-    gallery: [{ src: "/images/inspectionguide.png", alt: "Inspection guide" }],
+    gallery: [
+      {
+        src: "/images/The C.A.R.E. Framework - Website hero Image.jpg",
+        alt: "The C.A.R.E. Framework",
+      },
+    ],
   },
   {
     type: "digital_product",
