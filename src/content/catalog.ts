@@ -286,7 +286,7 @@ export const freeResources: FreeResourceItem[] = [
     id: "fr-2",
     slug: "grateful-tides",
     title: "Grateful Tides Journal",
-    subtitle: "A place to hold on to the moments that matter.",
+    subtitle: "A place to hold onto the moments that matter.",
     description: "",
     imageSrc: "/images/journal.png",
     imageAlt: "Grateful Tides Journal",
