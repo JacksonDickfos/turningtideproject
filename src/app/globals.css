@@ -718,6 +718,51 @@ dd {
   text-align: center;
 }
 
+.footerNav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.15rem;
+  justify-content: center;
+  margin: 0.35rem 0 0.65rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.footerNav a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footerNav a:hover,
+.footerNav a:focus-visible {
+  text-decoration: underline;
+}
+
+.legalDoc {
+  max-width: 72ch;
+}
+
+.legalDoc .h3 {
+  margin-top: 0.25rem;
+}
+
+.legalDoc a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.legalDoc a:hover,
+.legalDoc a:focus-visible {
+  text-decoration: underline;
+}
+
+.legalList {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
 .footerLogoWrap {
   display: grid;
   place-items: center;

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { site } from "@/content/site";
 import { Container } from "@/components/Container";
 import Image from "next/image";
@@ -18,6 +20,11 @@ export function SiteFooter() {
               className="footerLogoImg"
             />
           </div>
+          <nav className="footerNav" aria-label="Legal and contact">
+            <Link href="/contact">Contact Us</Link>
+            <Link href="/privacy">Privacy Policy</Link>
+            <Link href="/terms">Terms & Conditions</Link>
+          </nav>
           <p className="muted">
             © {year} {site.name}. All rights reserved.
           </p>
