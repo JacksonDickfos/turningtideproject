@@ -22,7 +22,7 @@ export function SiteFooter() {
           </div>
           <nav className="footerNav" aria-label="Legal and contact">
             <Link href="/contact">Contact Us</Link>
-            <Link href="/carer-burnout-assessment">Carer Burnout Assessment</Link>
+            <Link href="/carer-burnout-assessment">Carer Burnout Quiz</Link>
             <Link href="/privacy">Privacy Policy</Link>
             <Link href="/terms">Terms & Conditions</Link>
           </nav>
