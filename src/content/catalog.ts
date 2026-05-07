@@ -107,6 +107,33 @@ export const digitalProducts: DigitalProductItem[] = [
         src: "/images/The C.A.R.E. Framework - Website hero Image.jpg",
         alt: "The C.A.R.E. Framework",
       },
+      { src: "/images/CF 1 The C.A.R.E. Framework.jpg", alt: "The C.A.R.E. Framework" },
+      { src: "/images/CF 2 The C.A.R.E. Framework.jpg", alt: "The C.A.R.E. Framework" },
+      { src: "/images/CF 3 The C.A.R.E. Framework.jpg", alt: "The C.A.R.E. Framework" },
+      {
+        src: "/images/CF 4 What The C.A.R.E. Framework helps you do.jpg",
+        alt: "What The C.A.R.E. Framework helps you do",
+      },
+      { src: "/images/CF 5 Who it_s for.jpg", alt: "Who it's for" },
+      {
+        src: "/images/CF 6 More than just a checklist.jpg",
+        alt: "More than just a checklist",
+      },
+      { src: "/images/CF 7 What_s inside.jpg", alt: "What's inside" },
+      {
+        src: "/images/CF 8 How families use The C.A.R.E. Framework.jpg",
+        alt: "How families use The C.A.R.E. Framework",
+      },
+      {
+        src: "/images/CF 9 What carers tell us they gain.jpg",
+        alt: "What carers tell us they gain",
+      },
+      { src: "/images/CF 10 Format.jpg", alt: "Format" },
+      { src: "/images/CF 11 Personal Use & Printing.jpg", alt: "Personal use and printing" },
+      {
+        src: "/images/CF 12 A practical guide for choosing residential aged care with clariety.jpg",
+        alt: "A practical guide for choosing residential aged care with clarity",
+      },
     ],
   },
   {
