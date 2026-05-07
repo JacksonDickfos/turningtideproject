@@ -24,6 +24,11 @@ export default function CarerBurnoutAssessmentPage() {
               Take a moment to check in with yourself. The quiz runs in the embedded tool below.
             </p>
             <p className="muted" style={{ margin: 0 }}>
+              Tip: For the biggest view with Claude’s top bar hidden, use the fullscreen control in the
+              top-right corner of the quiz (inside the frame). That mode can’t be started automatically
+              from this page because the quiz is hosted on Claude’s domain.
+            </p>
+            <p className="muted" style={{ margin: 0 }}>
               <a href={ARTIFACT_URL} target="_blank" rel="noreferrer">
                 Open the assessment in a new tab
               </a>{" "}
