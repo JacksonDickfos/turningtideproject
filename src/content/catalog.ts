@@ -315,9 +315,9 @@ export const freeResources: FreeResourceItem[] = [
       },
       { src: "/images/GT 9 The Brain Dump.jpg", alt: "The Brain Dump" },
     ],
-    signupHeading: "A gentle moment of gratitude",
+    signupHeading: "A gentle space to capture the moments that matter.",
     signupShortDescription:
-      "A simple gratitude journal designed to help you pause, reflect, and notice small moments of calm - even on hard days.",
+      "The quiet conversations, unexpected laughs, precious memories, and special moments with the person you love.",
     signupCtaLabel: "Download now",
     signupDisclosureNote:
       "By downloading, you'll also receive helpful emails from The Turning Tides Project. You can unsubscribe anytime.",
