@@ -12,20 +12,17 @@ export type PreviewItem = {
   href: string;
 };
 
-export const digitalProductsPreview: PreviewItem[] = digitalProducts.map((p) => {
-  const firstGallery = p.gallery?.[0];
-  return {
-    id: p.id,
-    slug: p.slug,
-    title: p.title,
-    subtitle: p.subtitle,
-    description: p.description,
-    longDescription: p.longDescription,
-    imageSrc: firstGallery?.src ?? p.imageSrc,
-    imageAlt: firstGallery?.alt ?? p.imageAlt,
-    href: `/digital-products/${p.slug}`,
-  };
-});
+export const digitalProductsPreview: PreviewItem[] = digitalProducts.map((p) => ({
+  id: p.id,
+  slug: p.slug,
+  title: p.title,
+  subtitle: p.subtitle,
+  description: p.description,
+  longDescription: p.longDescription,
+  imageSrc: p.imageSrc,
+  imageAlt: p.imageAlt,
+  href: `/digital-products/${p.slug}`,
+}));
 
 export const coursesPreview: PreviewItem[] = courses.map((c) => ({
   id: c.id,

@@ -62,6 +62,7 @@ export const digitalProducts: DigitalProductItem[] = [
       "An all-in-one digital tool to keep important information, appointments, and care details in one place.",
     sidebarNote: "Created to reduce overwhelm and help caring feel more manageable.",
     gallery: [
+      { src: "/images/carecompanion6.png", alt: "The Care Companion" },
       { src: "/images/CC 1 The Care Companion.png", alt: "The Care Companion" },
       {
         src: "/images/CC 2 What The Care Companion helps you do.png",
