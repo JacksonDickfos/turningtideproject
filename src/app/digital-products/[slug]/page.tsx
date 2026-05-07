@@ -286,11 +286,11 @@ export default async function DigitalProductDetailPage({
                       </p>
                       {product.status === "coming_soon" || !product.stripeUrl ? (
                         <button className="button" type="button" disabled>
-                          Download Now
+                          Buy Now
                         </button>
                       ) : (
                         <a className="button" href={product.stripeUrl}>
-                          Download Now
+                          Buy Now
                         </a>
                       )}
                     </div>
@@ -509,7 +509,7 @@ export default async function DigitalProductDetailPage({
 
                 {product.status === "coming_soon" || !product.stripeUrl ? (
                   <button className="button" type="button" disabled>
-                    Download Now
+                    Buy Now
                   </button>
                 ) : (
                   <>
