@@ -9,6 +9,41 @@ export function generateStaticParams() {
   return digitalProducts.map((p) => ({ slug: p.slug }));
 }
 
+const careFrameworkFaqs: { q: string; a: string }[] = [
+  {
+    q: "Is The C.A.R.E. Framework suitable if I’ve never looked at aged care before?",
+    a: "Yes. The framework is designed for people navigating this process for the first time. It provides a clear structure to help you understand what to prioritise, what to ask, and how to compare options carefully.",
+  },
+  {
+    q: "Can this be used if my loved one is involved in the decision?",
+    a: "Absolutely. The framework can be used independently or collaboratively. It supports individuals exploring care for themselves, as well as carers and families working through the decision together.",
+  },
+  {
+    q: "Is this aligned with any aged care providers or government services?",
+    a: "No. The C.A.R.E. Framework is completely independent. It is not affiliated with any aged care provider, broker, or government body, and there are no incentives influencing its guidance.",
+  },
+  {
+    q: "Does this replace an aged care broker?",
+    a: "No. Aged care brokers can assist by identifying suitable homes based on your circumstances, providing feedback on facilities, and sometimes helping with administrative processes or urgent situations. In most cases, however, families still attend tours themselves and make the final decision. The C.A.R.E. Framework does not replace a broker. It provides a structured method to help you assess facilities carefully and confidently when you attend tours and compare options. Some families choose to use it independently. Others use it alongside external advice to help guide their own observations and decision-making.",
+  },
+  {
+    q: "Is this a physical product?",
+    a: "No. The C.A.R.E. Framework is an instantly downloadable digital PDF. You can print the sections you need or use it on your device.",
+  },
+  {
+    q: "Can I print multiple copies?",
+    a: "Yes. You may print copies for your own caregiving needs, including if you are supporting more than one loved one. The product is for personal use only and is not licensed for sharing or distribution.",
+  },
+  {
+    q: "What if I purchase it and don’t use it straight away?",
+    a: "That’s fine. You can download it and use it whenever you are ready. There is no expiry, subscription, or ongoing commitment.",
+  },
+  {
+    q: "Do you offer refunds?",
+    a: "Due to the digital nature of The C.A.R.E. Framework, refunds are not offered once the product has been downloaded. Please read the product description carefully before purchasing to ensure it is the right fit for your needs. If you have any questions prior to purchase, you are welcome to reach out for clarification.",
+  },
+];
+
 const careCompanionFaqs: { q: string; a: string }[] = [
   {
     q: "Is this suitable if I’m new to caring?",
@@ -50,6 +85,7 @@ export default async function DigitalProductDetailPage({
   if (!product) return notFound();
 
   const isCareCompanion = product.slug === "the-care-companion";
+  const isCareFramework = product.slug === "residential-aged-care-inspection-guide";
 
   const galleryImages =
     product.gallery?.length
@@ -80,6 +116,24 @@ export default async function DigitalProductDetailPage({
           <div className="detailGrid">
             <div className="detailGallery">
               {galleryImages.length ? <FreeResourceGallery images={galleryImages} /> : null}
+
+              {isCareFramework ? (
+                <div className="stack detailContent">
+                  <section className="faqSection">
+                    <h2 className="h2">Frequently Asked Questions</h2>
+                    <div className="faqList">
+                      {careFrameworkFaqs.map((f) => (
+                        <details key={f.q} className="faqItem">
+                          <summary>{f.q}</summary>
+                          <p className="muted" style={{ margin: 0 }}>
+                            {f.a}
+                          </p>
+                        </details>
+                      ))}
+                    </div>
+                  </section>
+                </div>
+              ) : null}
 
               {isCareCompanion ? (
                 <div className="stack detailContent">
