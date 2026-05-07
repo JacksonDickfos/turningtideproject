@@ -628,22 +628,32 @@ html[data-scrolled="true"] .siteHeader {
   border: none;
   background: var(--accent);
   color: var(--white);
+  font: inherit;
   font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
-.button:hover {
+.button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.button:hover:not(:disabled) {
   filter: brightness(1.03);
   text-decoration: none;
 }
 
-.button:not(.secondary):hover {
+.button:not(.secondary):hover:not(:disabled) {
   filter: brightness(1.02);
   background: var(--accentHover);
 }
 
-.button.secondary {
-  background: transparent;
-  color: var(--accent);
+.detailLayout .panel .panelInner.stack a.button,
+.detailLayout .panel .panelInner.stack button.button {
+  width: 100%;
 }
 
 .grid {
