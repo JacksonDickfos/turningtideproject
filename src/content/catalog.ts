@@ -285,11 +285,11 @@ export const freeResources: FreeResourceItem[] = [
     type: "free_resource",
     id: "fr-2",
     slug: "grateful-tides",
-    title: "Grateful Tides",
-    subtitle: "A simple gratitude journal for carers – even on the hard days.",
+    title: "Grateful Tides Journal",
+    subtitle: "A place to hold on to the moments that matter.",
     description: "",
     imageSrc: "/images/journal.png",
-    imageAlt: "Grateful Tides",
+    imageAlt: "Grateful Tides Journal",
     status: "available",
     pdfUrl: "", // TODO: set actual PDF URL
     gallery: [
