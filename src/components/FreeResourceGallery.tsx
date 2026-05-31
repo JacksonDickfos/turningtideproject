@@ -57,12 +57,18 @@ export function FreeResourceGallery({ images }: { images: FreeResourceGalleryIma
 
   if (!main) return null;
 
+  const lightboxImages = safeImages.map((img) => ({
+    src: publicImageSrc(img.src),
+    alt: img.alt,
+  }));
+
   const lightbox = (
     <ImageLightbox
       open={lightboxOpen}
       onClose={() => setLightboxOpen(false)}
-      src={publicImageSrc(main.src)}
-      alt={main.alt}
+      images={lightboxImages}
+      index={active}
+      onIndexChange={setActive}
     />
   );
 
