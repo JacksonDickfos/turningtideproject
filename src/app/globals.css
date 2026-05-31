@@ -894,20 +894,40 @@ dd {
   gap: 0.4rem;
 }
 
-.quizEmbedWrap {
+.carerBurnoutSection {
+  padding-top: 0.5rem;
+}
+
+.carerBurnoutQuiz {
   width: 100%;
   max-width: 56rem;
   margin-inline: auto;
+  padding: 1.5rem 0 2.5rem;
+  border-radius: var(--radius);
+  background: linear-gradient(150deg, #fff0f5 0%, #f1e3d3 60%, #e8f0d8 100%);
 }
 
-.quizEmbedFrame {
+.carerBurnoutQuizCta {
   display: block;
   width: 100%;
-  height: min(85vh, 720px);
-  min-height: 600px;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--white);
+  padding: 15px 32px;
+  border: none;
+  border-radius: 50px;
+  background: var(--olive);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: filter 160ms ease;
+}
+
+.carerBurnoutQuizCta:hover {
+  filter: brightness(1.03);
+  text-decoration: none;
+  color: var(--white);
 }
 
 .footerLogoWrap {
