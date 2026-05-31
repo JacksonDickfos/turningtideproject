@@ -95,14 +95,16 @@ export const digitalProducts: DigitalProductItem[] = [
     id: "dp-2",
     slug: "residential-aged-care-inspection-guide",
     title: "The C.A.R.E. Framework",
-    subtitle:
+    description:
       "A practical guide to visiting and choosing residential aged care for a loved one. What to look for, what to ask, and how to choose with confidence.",
-    description: "",
     imageSrc: "/images/The C.A.R.E. Framework - Website hero Image.jpg",
     imageAlt: "The C.A.R.E. Framework",
     status: "available",
     stripeUrl: "https://buy.stripe.com/6oUcMYgqOf4Qere9OH6oo01",
     priceLabel: "$49.95 AUD",
+    sidebarTitle: "The C.A.R.E. Framework",
+    sidebarSubtitle:
+      "A practical guide to visiting and choosing residential aged care for a loved one. What to look for, what to ask, and how to choose with confidence.",
     gallery: [
       {
         src: "/images/The C.A.R.E. Framework - Website hero Image.jpg",
