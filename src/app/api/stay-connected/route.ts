@@ -1,26 +1,50 @@
 import { NextResponse } from "next/server";
 
+import { saveLead, validateLead, type LeadSource } from "@/lib/leads";
+
+type StayConnectedBody = {
+  name?: string;
+  email?: string;
+  source?: LeadSource;
+  quizScore?: number;
+  quizResultLabel?: string;
+};
+
 export async function POST(req: Request) {
-  let body: { name?: string; email?: string };
+  let body: StayConnectedBody;
   try {
-    body = (await req.json()) as { name?: string; email?: string };
+    body = (await req.json()) as StayConnectedBody;
   } catch {
     return NextResponse.json({ ok: false, message: "Invalid request" }, { status: 400 });
   }
 
-  const name = body.name?.trim();
-  const email = body.email?.trim();
-
-  if (!name || !email) {
-    return NextResponse.json(
-      { ok: false, message: "Please enter your name and email." },
-      { status: 400 }
-    );
+  const validated = validateLead(body.name, body.email);
+  if (!validated.ok) {
+    return NextResponse.json({ ok: false, message: validated.message }, { status: 400 });
   }
 
-  // TODO: Subscribe to Mailchimp audience / marketing list.
-  return NextResponse.json({
-    ok: true,
-    message: "Thanks for joining the community! We'll be in touch soon.",
+  const source: LeadSource =
+    body.source === "carer-burnout-quiz" ? "carer-burnout-quiz" : "stay-connected";
+
+  const saved = await saveLead({
+    name: validated.name,
+    email: validated.email,
+    source,
+    quizScore:
+      typeof body.quizScore === "number" && Number.isFinite(body.quizScore)
+        ? body.quizScore
+        : undefined,
+    quizResultLabel: body.quizResultLabel?.trim() || undefined,
   });
+
+  if (!saved.ok) {
+    return NextResponse.json({ ok: false, message: saved.message }, { status: 502 });
+  }
+
+  const message =
+    source === "carer-burnout-quiz"
+      ? "Thanks! Your full results are below."
+      : "Thanks for joining the community! We'll be in touch soon.";
+
+  return NextResponse.json({ ok: true, message });
 }

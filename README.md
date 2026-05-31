@@ -27,6 +27,16 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Email leads (Stay Connected + Carer Burnout Quiz)
+
+Both forms POST to `/api/stay-connected`. To save subscribers in **Mailchimp**:
+
+1. Copy `env.example` values into `.env.local` (local) and **Vercel → Project → Settings → Environment Variables** (production).
+2. Set `MAILCHIMP_API_KEY` (format `xxxxxxxx-usXX`) and `MAILCHIMP_AUDIENCE_ID` (Audience ID from Mailchimp audience settings).
+3. Redeploy. Quiz leads are tagged `Carer Burnout Quiz` plus their result band; Stay Connected leads get `Stay Connected`.
+
+Without those variables, forms still work in the UI but leads are **not** stored in Mailchimp.
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.

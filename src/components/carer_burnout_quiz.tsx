@@ -222,6 +222,7 @@ export default function CarerBurnoutQuiz() {
   const [form, setForm] = useState({ name: "", email: "" });
   const [formError, setFormError] = useState("");
   const [submitError, setSubmitError] = useState("");
+  const [formSubmitting, setFormSubmitting] = useState(false);
 
   const score = answers.reduce<number>((s, a) => s + (a ?? 0), 0);
   const result = getResult(score);
@@ -245,7 +246,7 @@ export default function CarerBurnoutQuiz() {
     setStep("teaser");
   };
 
-  const handleSubmitForm = () => {
+  const handleSubmitForm = async () => {
     if (!form.name.trim() || !form.email.trim()) {
       setFormError("Please enter your name and email to receive your results.");
       return;
@@ -254,8 +255,34 @@ export default function CarerBurnoutQuiz() {
       setFormError("Please enter a valid email address.");
       return;
     }
+
     setFormError("");
-    setStep("result");
+    setFormSubmitting(true);
+
+    try {
+      const res = await fetch("/api/stay-connected", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: form.name.trim(),
+          email: form.email.trim(),
+          source: "carer-burnout-quiz",
+          quizScore: score,
+          quizResultLabel: result.label,
+        }),
+      });
+      const data = (await res.json()) as { ok: boolean; message?: string };
+      if (!res.ok || !data.ok) {
+        throw new Error(data.message ?? "Unable to save your details. Please try again.");
+      }
+      setStep("result");
+    } catch (err) {
+      setFormError(
+        err instanceof Error ? err.message : "Something went wrong. Please try again."
+      );
+    } finally {
+      setFormSubmitting(false);
+    }
   };
 
   const wrap: CSSProperties = {
@@ -577,8 +604,17 @@ export default function CarerBurnoutQuiz() {
               {formError}
             </p>
           ) : null}
-          <button type="button" style={btn} onClick={handleSubmitForm}>
-            Unlock My Full Results →
+          <button
+            type="button"
+            style={{
+              ...btn,
+              opacity: formSubmitting ? 0.75 : 1,
+              cursor: formSubmitting ? "wait" : "pointer",
+            }}
+            onClick={() => void handleSubmitForm()}
+            disabled={formSubmitting}
+          >
+            {formSubmitting ? "Saving…" : "Unlock My Full Results →"}
           </button>
           <p
             style={{
