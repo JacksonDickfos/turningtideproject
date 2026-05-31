@@ -106,7 +106,7 @@ export default async function DigitalProductDetailPage({
 
           <header className="detailHeader">
             <h1 className="h1">{product.title}</h1>
-            {product.subtitle ? (
+            {product.subtitle && !product.sidebarSubtitle ? (
               <p className="muted" style={{ margin: 0 }}>
                 {product.subtitle}
               </p>
@@ -498,7 +498,7 @@ export default async function DigitalProductDetailPage({
                 ) : null}
                 {product.sidebarNote ? (
                   <p style={{ margin: 0 }}>{product.sidebarNote}</p>
-                ) : product.description ? (
+                ) : product.description && !product.sidebarSubtitle ? (
                   <p style={{ margin: 0 }}>{product.description}</p>
                 ) : null}
                 {product.longDescription ? (

@@ -95,8 +95,9 @@ export const digitalProducts: DigitalProductItem[] = [
     id: "dp-2",
     slug: "residential-aged-care-inspection-guide",
     title: "The C.A.R.E. Framework",
-    description:
+    subtitle:
       "A practical guide to visiting and choosing residential aged care for a loved one. What to look for, what to ask, and how to choose with confidence.",
+    description: "",
     imageSrc: "/images/The C.A.R.E. Framework - Website hero Image.jpg",
     imageAlt: "The C.A.R.E. Framework",
     status: "available",
