@@ -21,6 +21,6 @@ export async function POST(req: Request) {
   // TODO: Subscribe to Mailchimp audience / marketing list.
   return NextResponse.json({
     ok: true,
-    message: "Thanks for staying connected! We'll be in touch soon.",
+    message: "Thanks for joining the community! We'll be in touch soon.",
   });
 }

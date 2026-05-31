@@ -57,9 +57,13 @@ export function StayConnectedTrigger() {
             <h2 className="h3" id={titleId} style={{ margin: 0, paddingRight: "1.5rem" }}>
               {site.stayConnected.heading}
             </h2>
-            <p className="muted" style={{ margin: 0 }}>
-              {site.stayConnected.blurb}
-            </p>
+            <div className="stack" style={{ gap: "0.65rem" }}>
+              {site.stayConnected.blurbParagraphs.map((paragraph) => (
+                <p key={paragraph} className="muted" style={{ margin: 0 }}>
+                  {paragraph}
+                </p>
+              ))}
+            </div>
             <StayConnectedForm onSuccess={close} />
           </div>
         </div>

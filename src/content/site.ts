@@ -35,11 +35,14 @@ export const site = {
 
   stayConnected: {
     heading: "Stay Connected",
-    blurb:
-      "Join our mailing list for helpful updates, carer support, and news from The Turning Tides Project — even if you have not downloaded a resource or purchased a product yet.",
-    ctaLabel: "Stay Connected",
-    successMessage: "Thanks for staying connected! We'll be in touch soon.",
+    blurbParagraphs: [
+      "Caring for someone you love can feel isolating at times. You don’t have to do it alone.",
+      "Join our community for supportive emails, practical tips, honest conversations, free resources, and gentle reminders to prioritise yourself too.",
+      "No pressure. No overwhelm. Just support from someone who truly understands what it’s like to be a carer.",
+    ],
+    ctaLabel: "Join the Community",
+    successMessage: "Thanks for joining the community! We'll be in touch soon.",
     disclosureNote:
-      "By signing up, you'll receive helpful emails from The Turning Tides Project. You can unsubscribe anytime.",
+      "By subscribing, you’ll receive occasional emails from The Turning Tides Project. You can unsubscribe at any time.",
   },
 };
