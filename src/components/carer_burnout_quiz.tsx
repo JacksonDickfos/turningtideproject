@@ -261,9 +261,9 @@ export default function CarerBurnoutQuiz() {
   const wrap: CSSProperties = {
     fontFamily: FONT,
     display: "flex",
-    alignItems: "flex-start",
+    alignItems: "center",
     justifyContent: "center",
-    padding: "0 16px 2rem",
+    width: "100%",
   };
 
   const card: CSSProperties = {
