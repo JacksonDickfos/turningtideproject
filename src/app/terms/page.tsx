@@ -135,7 +135,7 @@ export default function TermsPage() {
               </p>
 
               <div className="buttonRow" style={{ marginTop: 8 }}>
-                <Link className="button secondary" href="/">
+                <Link className="button" href="/">
                   Back home
                 </Link>
               </div>

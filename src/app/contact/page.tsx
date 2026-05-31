@@ -67,7 +67,7 @@ export default function ContactPage() {
               </p>
 
               <div className="buttonRow" style={{ marginTop: 8 }}>
-                <Link className="button secondary" href="/">
+                <Link className="button" href="/">
                   Back home
                 </Link>
               </div>

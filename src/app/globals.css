@@ -651,6 +651,16 @@ html[data-scrolled="true"] .siteHeader {
   background: var(--accentHover);
 }
 
+.button.secondary {
+  background: transparent;
+  color: var(--accent);
+}
+
+.button.secondary:hover:not(:disabled) {
+  background: color-mix(in oklab, var(--accent) 8%, transparent);
+  filter: none;
+}
+
 .detailLayout .panel .panelInner.stack a.button,
 .detailLayout .panel .panelInner.stack button.button {
   width: 100%;
@@ -756,14 +766,22 @@ dd {
   margin-top: 0.25rem;
 }
 
-.legalDoc a {
+.legalDoc a:not(.button) {
   color: var(--accent);
   text-decoration: none;
 }
 
-.legalDoc a:hover,
-.legalDoc a:focus-visible {
+.legalDoc a:not(.button):hover,
+.legalDoc a:not(.button):focus-visible {
   text-decoration: underline;
+}
+
+.legalDoc a.button {
+  color: var(--white);
+}
+
+.legalDoc a.button.secondary {
+  color: var(--accent);
 }
 
 .legalList {
