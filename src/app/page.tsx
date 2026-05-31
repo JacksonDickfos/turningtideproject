@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { Container } from "@/components/Container";
+import { HeroWaves } from "@/components/HeroWaves";
 import {
   coursesPreview,
   digitalProductsPreview,
@@ -65,7 +66,7 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <div className="heroWaves" aria-hidden="true" />
+        <HeroWaves />
         <Container>
           <div className="heroGrid">
             <div className="stack">

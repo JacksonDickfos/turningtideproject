@@ -361,62 +361,53 @@ html[data-scrolled="true"] .siteHeader {
   z-index: 1;
 }
 
-/* Rolling “beach wave” band at the bottom of the hero */
+@keyframes waveScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Rolling wave band at the bottom of the hero */
 .heroWaves {
   position: absolute;
-  inset: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: clamp(90px, 12vw, 120px);
+  background: var(--white);
+  overflow: hidden;
   pointer-events: none;
   z-index: 0;
-  --tide-rise: clamp(120px, 18vw, 220px);
 }
 
-.heroWaves::before,
-.heroWaves::after {
-  content: "";
+.heroWaveLayer {
   position: absolute;
-  left: -20%;
-  right: -20%;
   bottom: 0;
-  height: 140px;
-  opacity: 0.95;
-
-  /* Mask: repeating filled wave shape (more wave-like, less “mountain”) */
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='220' viewBox='0 0 900 220'%3E%3Cpath d='M0 150 C 60 150 120 135 165 98 C 195 98 210 122 225 150 C 250 178 270 190 285 190 C 295 190 298 175 300 150 C 360 150 420 135 465 98 C 495 98 510 122 525 150 C 550 178 570 190 585 190 C 595 190 598 175 600 150 C 660 150 720 135 765 98 C 795 98 810 122 825 150 C 850 178 870 190 885 190 C 895 190 898 175 900 150 V 220 H 0 Z' fill='%23000'/%3E%3C/svg%3E");
-  -webkit-mask-repeat: repeat-x;
-  -webkit-mask-size: 900px 220px;
-  -webkit-mask-position: 0 100%;
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='220' viewBox='0 0 900 220'%3E%3Cpath d='M0 150 C 60 150 120 135 165 98 C 195 98 210 122 225 150 C 250 178 270 190 285 190 C 295 190 298 175 300 150 C 360 150 420 135 465 98 C 495 98 510 122 525 150 C 550 178 570 190 585 190 C 595 190 598 175 600 150 C 660 150 720 135 765 98 C 795 98 810 122 825 150 C 850 178 870 190 885 190 C 895 190 898 175 900 150 V 220 H 0 Z' fill='%23000'/%3E%3C/svg%3E");
-  mask-repeat: repeat-x;
-  mask-size: 900px 220px;
-  mask-position: 0 100%;
+  left: 0;
+  width: 200%;
+  height: 100%;
 }
 
-/* Back wave (sand/blush body) */
-.heroWaves::before {
-  background:
-    linear-gradient(
-      180deg,
-      transparent 0%,
-      color-mix(in oklab, var(--blush) 70%, var(--white) 30%) 38%,
-      color-mix(in oklab, var(--sand) 72%, var(--white) 28%) 100%
-    );
-  filter: blur(0.15px);
-  animation: tideGrow 9.5s ease-in-out infinite;
+.heroWaveLayer--back {
+  animation: waveScroll 14s linear infinite;
+  opacity: 0.45;
 }
 
-/* Front “foam” edge (thin white highlight) */
-.heroWaves::after {
-  height: 105px;
-  opacity: 0.75;
-  background:
-    linear-gradient(
-      180deg,
-      transparent 0%,
-      color-mix(in oklab, var(--white) 92%, var(--blush) 8%) 46%,
-      transparent 62%
-    );
-  filter: blur(0.6px);
-  animation: tideGrowFoam 7.5s ease-in-out infinite;
+.heroWaveLayer--mid {
+  animation: waveScroll 10s linear infinite;
+  opacity: 0.65;
+}
+
+.heroWaveLayer--front {
+  animation: waveScroll 7s linear infinite;
+}
+
+/* Matches body background (--bg). Use var(--sand) instead for a cream handoff. */
+.heroWaveLayer--front path {
+  fill: var(--white);
 }
 
 @keyframes tideDrift {
@@ -428,58 +419,14 @@ html[data-scrolled="true"] .siteHeader {
   }
 }
 
-/* Tide “comes in” (grows upward) then “goes out” (shrinks) without shifting the whole band */
-@keyframes tideGrow {
-  0% {
-    -webkit-mask-position: 0 100%;
-    mask-position: 0 100%;
-    height: 140px;
-    opacity: 0.92;
-  }
-  50% {
-    -webkit-mask-position: 420px 100%;
-    mask-position: 420px 100%;
-    height: calc(var(--tide-rise) + 220px);
-    opacity: 1;
-  }
-  100% {
-    -webkit-mask-position: 900px 100%;
-    mask-position: 900px 100%;
-    height: 140px;
-    opacity: 0.92;
-  }
-}
-
-/* Foam “ruffles” show most at peak tide */
-@keyframes tideGrowFoam {
-  0% {
-    -webkit-mask-position: 0 100%;
-    mask-position: 0 100%;
-    height: 95px;
-    opacity: 0.35;
-  }
-  50% {
-    -webkit-mask-position: -360px 100%;
-    mask-position: -360px 100%;
-    height: calc(var(--tide-rise) + 120px);
-    opacity: 0.85;
-  }
-  100% {
-    -webkit-mask-position: -900px 100%;
-    mask-position: -900px 100%;
-    height: 95px;
-    opacity: 0.35;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .hero::before {
     animation: none;
     transform: none;
   }
-  .heroWaves::before,
-  .heroWaves::after {
+  .heroWaveLayer {
     animation: none;
+    transform: translateX(0);
   }
   .heroLogoImg {
     animation: none !important;
