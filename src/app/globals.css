@@ -252,6 +252,10 @@ html[data-scrolled="true"] .siteHeader {
   width: 100%;
 }
 
+.stayConnectedForm .button {
+  width: 100%;
+}
+
 .modalOverlay {
   position: fixed;
   inset: 0;

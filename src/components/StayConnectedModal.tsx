@@ -152,7 +152,7 @@ function StayConnectedForm({ onSuccess }: { onSuccess: () => void }) {
         </label>
 
         <button
-          className="navActionBtn navActionBtn--block"
+          className="button"
           type="submit"
           disabled={status === "submitting"}
         >
