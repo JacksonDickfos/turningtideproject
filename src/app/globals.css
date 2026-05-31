@@ -405,9 +405,9 @@ html[data-scrolled="true"] .siteHeader {
   animation: waveScroll 7s linear infinite;
 }
 
-/* Matches body background (--bg). Use var(--sand) instead for a cream handoff. */
+/* Cream handoff — matches brand sand / HTML mockup (#F1E3D3) */
 .heroWaveLayer--front path {
-  fill: var(--white);
+  fill: var(--sand);
 }
 
 @keyframes tideDrift {
