@@ -278,6 +278,12 @@ html[data-scrolled="true"] .siteHeader {
   box-shadow: var(--shadow);
 }
 
+@media (min-width: 901px) {
+  .modalPanel {
+    width: min(100%, 34rem);
+  }
+}
+
 .modalPanelInner {
   padding: 1.5rem;
 }
