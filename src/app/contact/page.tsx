@@ -51,7 +51,7 @@ export default function ContactPage() {
                   <Link href="/digital-products">Product Pages</Link>
                 </li>
                 <li>
-                  <Link href="/digital-products/the-care-companion">Paid Product FAQs</Link>
+                  <Link href="/faqs">FAQs</Link>
                 </li>
                 <li>
                   <Link href="/free-resources">Free Resources</Link>

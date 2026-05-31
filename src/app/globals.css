@@ -255,17 +255,22 @@ html[data-scrolled="true"] .siteHeader {
 .modalOverlay {
   position: fixed;
   inset: 0;
-  z-index: 100;
-  display: grid;
-  place-items: center;
-  padding: 1.25rem;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: max(1.25rem, env(safe-area-inset-top)) max(1.25rem, env(safe-area-inset-right))
+    max(1.25rem, env(safe-area-inset-bottom)) max(1.25rem, env(safe-area-inset-left));
+  overflow-y: auto;
   background: color-mix(in oklab, var(--black) 42%, transparent);
 }
 
 .modalPanel {
   position: relative;
   width: min(100%, 26rem);
-  max-height: min(90vh, 640px);
+  max-height: min(calc(100dvh - 2.5rem), 640px);
+  margin: auto;
+  flex-shrink: 0;
   overflow: auto;
   border-radius: var(--radius);
   border: 1px solid var(--border);

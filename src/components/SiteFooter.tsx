@@ -22,6 +22,7 @@ export function SiteFooter() {
           </div>
           <nav className="footerNav" aria-label="Legal and contact">
             <Link href="/contact">Contact Us</Link>
+            <Link href="/faqs">FAQs</Link>
             <Link href="/privacy">Privacy Policy</Link>
             <Link href="/terms">Terms & Conditions</Link>
           </nav>
