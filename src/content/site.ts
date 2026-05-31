@@ -32,4 +32,14 @@ export const site = {
   social: {
     // Add links later (Instagram, YouTube, etc.)
   },
+
+  stayConnected: {
+    heading: "Stay Connected",
+    blurb:
+      "Join our mailing list for helpful updates, carer support, and news from The Turning Tides Project — even if you have not downloaded a resource or purchased a product yet.",
+    ctaLabel: "Stay Connected",
+    successMessage: "Thanks for staying connected! We'll be in touch soon.",
+    disclosureNote:
+      "By signing up, you'll receive helpful emails from The Turning Tides Project. You can unsubscribe anytime.",
+  },
 };

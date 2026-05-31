@@ -1,14 +1,14 @@
 import Link from "next/link";
 
-import { site } from "@/content/site";
 import { Container } from "@/components/Container";
+import { StayConnectedTrigger } from "@/components/StayConnectedModal";
 
 export function SiteHeader() {
   return (
     <header className="siteHeader">
       <Container>
         <div className="siteHeaderInner">
-          <nav className="nav">
+          <nav className="nav" aria-label="Main">
             <Link href="/#free-resources" className="navLink">
               Free Resources
             </Link>
@@ -19,6 +19,12 @@ export function SiteHeader() {
               Mini Courses
             </Link>
           </nav>
+          <div className="navActions" aria-label="Quick links">
+            <Link href="/carer-burnout-assessment" className="navActionBtn">
+              Carer Burnout Quiz
+            </Link>
+            <StayConnectedTrigger />
+          </div>
         </div>
       </Container>
     </header>
