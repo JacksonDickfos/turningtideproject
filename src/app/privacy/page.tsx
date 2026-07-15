@@ -81,9 +81,9 @@ export default function PrivacyPage() {
                 as:
               </p>
               <ul className="legalList">
-                <li>Mailchimp (email marketing)</li>
+                <li>Systeme.io (email marketing)</li>
                 <li>Stripe (payment processing)</li>
-                <li>Google Drive (file hosting and delivery)</li>
+                <li>Google Drive (secure business document storage)</li>
               </ul>
               <p style={{ margin: 0 }}>
                 These providers may collect, store, or process your information on our behalf to
@@ -94,12 +94,16 @@ export default function PrivacyPage() {
                 How your information is stored
               </h2>
               <p style={{ margin: 0 }}>
-                Your information is stored securely using trusted third-party platforms. Some of these
-                providers may store or process data outside Australia. By using this website,
-                downloading resources, or purchasing products, you acknowledge that your information
-                may be transferred, stored, or processed overseas. We take reasonable steps to
-                protect your information; however no online system can be guaranteed to be completely
-                secure.
+                Your information is stored securely using trusted third-party platforms.
+              </p>
+              <p style={{ margin: 0 }}>
+                Some of these providers may store or process data outside Australia. By using this
+                website, downloading resources, or purchasing products, you acknowledge that your
+                information may be transferred, stored, or processed overseas.
+              </p>
+              <p style={{ margin: 0 }}>
+                We take reasonable steps to protect your information; however, no online system can
+                be guaranteed to be completely secure.
               </p>
 
               <h2 className="h3" style={{ margin: 0 }}>
@@ -129,7 +133,10 @@ export default function PrivacyPage() {
               <h2 className="h3" style={{ margin: 0 }}>
                 Data retention
               </h2>
-              <p style={{ margin: 0 }}>We only keep your personal information for as long as necessary to:</p>
+              <p style={{ margin: 0 }}>
+                We only keep your personal information for as long as reasonably necessary to fulfil
+                the purposes described in this policy or as required by law:
+              </p>
               <ul className="legalList">
                 <li>Provide products or services for you</li>
                 <li>Meet legal, tax, or accounting obligations</li>
@@ -144,8 +151,10 @@ export default function PrivacyPage() {
                 <li>Access the personal information we hold about you</li>
                 <li>Correct or update your information</li>
                 <li>Request deletion of your personal information where appropriate</li>
-                <li>To make a request, please contact us using the details below.</li>
               </ul>
+              <p style={{ margin: 0 }}>
+                To make a request, please contact us using the details below.
+              </p>
 
               <h2 className="h3" style={{ margin: 0 }}>
                 Contact
