@@ -19,7 +19,7 @@ export default function PrivacyPage() {
               The Turning Tides Project
             </p>
             <p className="muted" style={{ margin: 0 }}>
-              Effective Date: 30 March 2026
+              Last updated: 15 July 2026
             </p>
           </header>
 
